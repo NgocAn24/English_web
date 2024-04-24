@@ -11,3 +11,20 @@ h1 {
     cursor: url('assets/icons8-rocket-32.png'), auto;
     color: aqua;
 }
+
+<style>.mycontainer {
+    width: 100%;
+    overflow: auto;
+}
+
+p {
+    font-size: 30;
+    color: azure;
+}
+
+.mycontainer div {
+    width: 33%;
+    float: left;
+}
+
+</style>
