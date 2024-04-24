@@ -12,9 +12,8 @@ h1 {
     color: aqua;
 }
 
-<style>.mycontainer {
-    width: 100%;
-    overflow: auto;
+.mycontainer {
+    width: 100% overflow: auto;
 }
 
 p {
@@ -26,5 +25,3 @@ p {
     width: 33%;
     float: left;
 }
-
-</style>
