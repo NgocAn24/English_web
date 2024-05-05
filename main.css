@@ -20,15 +20,29 @@ p {
 
 /*phan header */
 
-li {
+.header li {
     color: aliceblue;
     display: inline-flex;
     margin: 10px;
+}
+
+.header li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.header li a {
+    display: block;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 30px;
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
+.header ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .header {
@@ -49,6 +63,28 @@ ul {
 
 .logo {
     text-align: end;
+}
+
+
+/* dang nhap*/
+
+.tk {
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tk:hover {
+    background-color: #555;
+    border-radius: 30px;
+}
+
+.tk-2 {
+    font-weight: 1200;
+    color: #f8f8f8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -83,6 +119,7 @@ ul {
 }
 
 .h1-side1 {
+    margin: 0;
     font-size: 40px;
     color: aqua;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -95,6 +132,13 @@ ul {
 .sidebar-2 {
     text-align: center;
     font-size: small;
+}
+
+.sidebar-2 li {
+    color: aliceblue;
+    display: inline-flex;
+    margin: 10px;
+    text-decoration: none;
 }
 
 .ring-center {
@@ -111,4 +155,23 @@ ul {
     -webkit-filter: drop-shadow(5px 5px 5px #000);
     filter: drop-shadow(5px 5px 5px #000);
     font-size: 4.2em
+}
+
+.ring-1:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #000);
+    filter: drop-shadow(5px 5px 5px #000);
+}
+
+.ring-2:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #000);
+    filter: drop-shadow(5px 5px 5px #000);
+}
+
+.ring-3:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #000);
+    filter: drop-shadow(5px 5px 5px #000);
+}
+
+.ring-1 {
+    transform: translate(39px, 10px);
 }

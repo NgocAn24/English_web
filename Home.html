@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Team</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 
                 <div class="menu">
                     <ul>
-                        <li><a href="https://howkteam.vn/">Giới thiệu</a></li>
+                        <li><a href="/English_web/display/About.html">Giới thiệu</a></li>
                         <li><a href="/cousre">Khóa học</a></li>
                         <li><a href="/question">Hỏi đáp</a></li>
                         <li><a href="/contact">Liên hệ</a></li>
@@ -28,10 +29,10 @@
                 </div>
                 <!-- End Menu Section -->
                 <div class="login">
-                    <ul>
-                        <li><a href="#login">dang nhap</a></li>
-                        <li><a href="#logi">dang ky</a></li>
-                    </ul>
+                    <button class="tk">
+                        <img src="assets/user.png" alt="">
+                        <span class="tk-2">Tài khoản</span>
+                    </button>
 
                 </div>
                 <!-- End login Section -->
@@ -39,7 +40,6 @@
             <!-- End header Section -->
 
         </header>
-
 
         <div class="mycontainer" style="min-height: 700px;">
             <div class="sidebar-container">
@@ -52,12 +52,34 @@
                 <!-- Section 2 -->
                 <div class="sidebar-2">
                     <ul>
-                        <li class="ring-center">
-                            <a href="/learn" style="cursor: url('assets/icons8-rocket-32.png'), auto;"><img src="assets/hocngay.png" style="width:131px;height:117px;"></a>
+                        <li>
+                            <ul class="ring-2">
+                                <li>
+                                    <a href="/phanhoi"><img src="assets/phanhoi.png" style="width:80px;height:80px;  cursor: url('assets/icons8-rocket-32.png'), auto"></a>
+                                </li>
+                            </ul>
                         </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+
+                            <li class="ring-center">
+                                <a href="/learn" style="cursor: url('assets/icons8-rocket-32.png'), auto;"><img src="assets/hocngay.png" style="width:131px;height:117px;"></a>
+                            </li>
+                            <li>
+                                <ul class="ring-1">
+                                    <li>
+                                        <a href="/tailieu" style="cursor: url('assets/icons8-rocket-32.png'), auto"><img src="assets/tailieu.png" style="width:67px;height:67px;"></a>
+
+                                    </li>
+                            </li>
+                            </ul>
+                        </li>
+
+                        <ul class="ring-3">
+                            <li>
+                                <a href="/gioithieu" style="cursor: url('assets/icons8-rocket-32.png'), auto"><img src="assets/Gioithieu.png" alt=""></a>
+                            </li>
+                        </ul>
+                        </li>
                     </ul>
 
 
@@ -70,9 +92,68 @@
 
 
 
+
+
     </div>
 
+    <div class="modal">
+        <div class="modal__overlay"></div>
 
+        <div class="modal__body">
+            <!--Register form-->
+            <!-- <div class="form1">
+                <div class="form1__container">
+                    <div class="form1__header">
+                        <h3 class="form1__title">ĐĂNG KÍ</h3>
+                    </div>
+                    
+                    <div class="form1__form">
+                        <div class="form1__group">
+                            <input type="text" class="form1__input" placeholder="  Email hoặc Username ">
+                        </div>
+                        <div class="form1__group">
+                            <input type="password" class="form1__input" placeholder="  Mật khẩu">
+                        </div>
+                        <div class="form1__group">
+                            <input type="password" class="form1__input" placeholder="  Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="form1__controller">
+                        <button class="btn__dk ds">ĐĂNG KÍ</button>
+                        <button class="btn__back ds">TRỞ LẠI</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <!--Login form-->
+            <div class="form2">
+                <div class="form2__container">
+                    <div class="form2__header">
+                        <h3 class="form2__title">ĐĂNG NHẬP</h3>
+                    </div>
+                    <div class="form2__form">
+                        <div class="form2__group">
+                            <input type="text" class="form2__input" placeholder="  Email hoặc Username ">
+                        </div>
+                        <div class="form2__group">
+                            <input type="password" class="form1__input" placeholder="  Mật khẩu">
+                        </div>
+                        <div class="qmk"><span style="color: aliceblue;">Quên mật khẩu ?</span></div>
+
+                    </div>
+
+                    <div class="form2__controller">
+                        <button class="btn__dn ds">ĐĂNG NHẬP</button>
+                        <button class="btn__rs ds">ĐĂNG KÍ</button>
+                        <button class="btn__exit ds">THOÁT</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 
 </body>
 
