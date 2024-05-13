@@ -1,0 +1,140 @@
+.body-about {
+    min-height: 800px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+p {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+@media(max-width:800px) {
+    .body-about__avatar {}
+}
+
+
+/*title*/
+
+.body-about__title {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    align-items: end;
+    justify-content: center;
+}
+
+#title_khung {
+    background-color: rgb(240, 226, 207, 0.2);
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.body-about__into {
+    min-height: 700px;
+    width: 100%;
+}
+
+.body-about__tamnhin {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-about__box-tn {
+    height: 300px;
+    width: 750px;
+}
+
+.body-about__avatar {
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    margin: 20px;
+    min-height: 300px;
+    width: 350px;
+    background-color: aliceblue;
+}
+
+.avatar__dau {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+#mau {
+    background: #2095f3;
+    background: linear-gradient(135deg, #2095f3 0%, #26c6da 100%)!important;
+}
+
+#mau1 {
+    background: #26c6da;
+    background: linear-gradient(135deg, #26c6da 0%, #9ccc65 100%) !important;
+}
+
+.anh {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background-color: rgb(134, 149, 144);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+}
+
+.avatar__giua {
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 100%;
+    height: 90px;
+}
+
+.avater__giua2 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.avatar__cuoi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(239, 236, 236);
+    width: 100%;
+    height: 80px;
+}
+
+.avatar__icons {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
