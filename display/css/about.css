@@ -1,17 +1,13 @@
 .body-about {
     min-height: 800px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(238, 238, 238);
 }
 
 p {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-}
-
-@media(max-width:800px) {
-    .body-about__avatar {}
 }
 
 
@@ -21,13 +17,13 @@ p {
     display: flex;
     height: 300px;
     width: 100%;
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(238, 238, 238);
     align-items: end;
     justify-content: center;
 }
 
 #title_khung {
-    background-color: rgb(240, 226, 207, 0.2);
+    background-color: rgba(207, 201, 192, 0.2);
     width: 90%;
     height: 200px;
     display: flex;

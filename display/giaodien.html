@@ -4,187 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/giaodien.css">
     <title>Document</title>
-    <link rel="stylesheet" href="giaodien.css">
 </head>
 
 <body>
-    <div class="body-container">
-        <div class="header">
-            <div class="logo">
-                <img src="assets/z_logo.png" width="90px" height="70px" alt="">
-            </div>
-            <div class="search__header">
-                <input type="search" class="search__main" placeholder=" tìm kiếm">
-            </div>
-            <div class="login">
-                <button class="tk">
+
+    <div class="body_main">
+        <section id="sidebar">
+            <a href="#" class="brand menu_icon"><span class="text-menu">Z </span>english</a>
+            <ul class="menu-column .top">
+                <li class="active">
+                    <a href="#home">
+                        <img class="menu_icon" src="assets/icons8-book-24.png" alt="">
+                        <span class="text nav-text"> KHÓA HỌC</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="menu_icon" src="assets/icons8-search-24.png" alt="">
+                        <span class="text nav-text">TỪ ĐIỂN</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="menu_icon" src="assets/icons8-quizizz-20.png" alt="">
+                        <span class="text nav-text">QUIZ</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="menu_icon" src="assets/icons8-translate-24.png" alt="">
+                        <span class="text nav-text">DỊCH VĂN BẢN</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="menu_icon" src="assets/icons8-document-20.png" alt="">
+                        <span class="text nav-text"> TÀI LIỆU</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('about.html')">
+                        <img class="menu_icon" src="assets/icons8-about-20.png" alt="">
+                        <span class="text nav-text"> GIỚI THIỆU</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <header>
+
+                <img class="toggle" src="assets/menu.png" alt="">
+
+                <form action="#">
+                    <div class="form-search">
+                        <input type="search" placeholder="Tim Kiem...">
+                    </div>
+                </form>
+                <a href="#">
                     <img src="assets/user.png" alt="">
-                    <span class="tk-2">Tài khoản</span>
-                </button>
+                </a>
+            </header>
+            <div id="content-main">
 
             </div>
 
-        </div>
-        <!--body main-->
-        <div class="body-main">
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__top1">
+                        <ul>
+                            <li class="footer__logo"><img src="assets/z_logo.png" width="200px" height="200px"></li>
+                            <li></li>
+                        </ul>
+                    </div>
 
-            <!--menu-->
-            <nav class="menu">
-                <div class="tabar">
-                    <img src="assets/menu.png">
-                </div>
-                <div class="logo__menu">
-                    <img src="assets/logo-z-90.png" width="100px" height="100px">
+                    <div class="footer__top2">
 
-                </div>
-                <ul class="menu__column">
-                    <li>
-                        <a href="#home">
-                            <img class="menu__icon" src="assets/icons8-book-24.png" alt="">
-                            <span class="text nav-text"> KHÓA HỌC</span>
-                        </a>
-                    </li>
+                        <ul>
+                            <li><span style="font-size: 20PX;">Danh mục</span></li>
+                            <li><a href="">KHÓA HỌC</a></li>
+                            <li><a href="">TRUYỆN</a></li>
+                            <li><a href="">TỪ ĐIỂN</a></li>
+                        </ul>
 
-                    <li>
-                        <a href="">
-                            <img class="menu__icon" src="assets/icons8-search-24.png" alt="">
-                            <span class="text nav-text">TỪ ĐIỂN</span>
-                        </a>
-                    </li>
+                        <ul>
+                            <li><span style="font-size: 20PX;">Mở rộng</span></li>
+                            <li><a href="">QUIZZ</a></li>
+                            <li><a href="">DỊCH VĂN BẢN</a></li>
+                            <li><a href="">TÀI LIỆU</a></li>
+                        </ul>
 
-                    <li>
-                        <a href="">
-                            <img class="menu__icon" src="assets/icons8-quizizz-20.png" alt="">
-                            <span class="text nav-text">QUIZ</span>
-                        </a>
-                    </li>
+                        <ul>
+                            <li><span style="font-size: 20PX;">Về chúng tôi</span></li>
+                            <li>Địa chỉ: Penacony, Yên Nghĩa,Hà Đông</li>
+                            <li>Số điện thoại: 09812781</li>
+                            <li><a href="">Giới thiệu</a></li>
+                        </ul>
 
-                    <li>
-                        <a href="">
-                            <img class="menu__icon" src="assets/icons8-translate-24.png" alt="">
-                            <span class="text nav-text">DỊCH VĂN BẢN</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img class="menu__icon" src="assets/icons8-document-20.png" alt="">
-                            <span class="text nav-text"> TÀI LIỆU</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="loadPage('about.html')">
-                            <img class="menu__icon" src="assets/icons8-about-20.png" alt="">
-                            <span class="text nav-text"> GIỚI THIỆU</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                        <ul>
+                            <span style="font-size: 20PX; font-weight: 900;">Theo dõi chúng tôi</span>
+                            <ul class="footer__icons">
+                                <li style="margin-top: 5px;">
+                                    <a href="https://www.facebook.com/" target="_blank" style="justify-content: center;"><img src="assets/facebook-38.png"></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/NgocAn24/English_web" target="_blank"><img src="assets/github.png"></a>
+                                </li>
+                            </ul>
 
 
-            <div id="content" style="max-height: 500px;">
-                <!-- Nội dung của trang sẽ được tải ở đây -->
-            </div>
 
-
-        </div>
-
-        <!--footer-->
-        <div class="footer">
-            <div class="footer__top">
-                <div class="footer__top1">
-                    <ul>
-                        <li class="footer__logo"><img src="assets/z_logo.png" width="200px" height="200px"></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div class="footer__top2">
-
-                    <ul>
-                        <li><span style="font-size: 20PX;">Danh mục</span></li>
-                        <li><a href="">KHÓA HỌC</a></li>
-                        <li><a href="">TRUYỆN</a></li>
-                        <li><a href="">TỪ ĐIỂN</a></li>
-                    </ul>
-
-                    <ul>
-                        <li><span style="font-size: 20PX;">Mở rộng</span></li>
-                        <li><a href="">QUIZZ</a></li>
-                        <li><a href="">DỊCH VĂN BẢN</a></li>
-                        <li><a href="">TÀI LIỆU</a></li>
-                    </ul>
-
-                    <ul>
-                        <li><span style="font-size: 20PX;">Về chúng tôi</span></li>
-                        <li>Địa chỉ: Penacony, Yên Nghĩa,Hà Đông</li>
-                        <li>Số điện thoại: 09812781</li>
-                        <li><a href="">Giới thiệu</a></li>
-                    </ul>
-
-                    <ul>
-                        <span style="font-size: 20PX; font-weight: 900;">Theo dõi chúng tôi</span>
-                        <ul class="footer__icons">
-                            <li style="margin-top: 5px;">
-                                <a href="https://www.facebook.com/" target="_blank" style="justify-content: center;"><img src="assets/facebook-38.png"></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/NgocAn24/English_web" target="_blank"><img src="assets/github.png"></a>
-                            </li>
                         </ul>
 
 
-
-                    </ul>
-
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="footer__bottom">
+                    <hr style="width: 80%;">
+                    <p style="margin-left: 10%;">Zenglish © 2024</p>
 
-            <div class="footer__bottom">
-                <hr style="width: 80%;">
-                <p style="margin-left: 10%;">Zenglish © 2024</p>
+                </div>
+            </footer>
 
-            </div>
 
-        </div>
+        </section>
+
 
     </div>
 
 </body>
+
 <script>
-    const nav = document.querySelector('nav');
-    const tabar = document.querySelector('.tabar');
-
-
-    tabar.onclick = function() {
-        nav.classList.toggle('hide');
-
-    }
-
-
     /* chuyen huong trang*/
 
     function loadPage(page) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("content").innerHTML = this.responseText;
+                document.getElementById("content-main").innerHTML = this.responseText;
             }
         };
         xhttp.open("GET", page, true);
         xhttp.send();
     }
 
-    function limitContentHeight() {
-        var content = document.getElementById("content");
-        var maxHeight = 500; // Đặt chiều cao tối đa là 500px
-        if (content.scrollHeight > maxHeight) {
-            content.style.overflowY = 'auto'; // Kích hoạt thanh cuộn khi nội dung vượt quá
-            content.style.maxHeight = maxHeight + 'px'; // Đặt chiều cao tối đa
-        }
+
+
+    //thiet ke khung menu li bo  goc
+    const allSideMenu = document.querySelectorAll('#sidebar .menu-column li a');
+    allSideMenu.forEach(item => {
+        const li = item.parentElement;
+        item.addEventListener('click', function() {
+            allSideMenu.forEach(i => {
+                i.parentElement.classList.remove('active');
+            })
+            li.classList.add('active');
+        })
+    });
+
+    //Toggle sidebar
+    const menuBar = document.querySelector('#content header .toggle');
+    const sidebar = document.getElementById('sidebar');
+    menuBar.addEventListener('click', function() {
+        sidebar.classList.toggle('hide');
+    })
+
+
+
+
+    if (window.innerWidth < 768) {
+        sidebar.classList.add('hide');
     }
 </script>
 
