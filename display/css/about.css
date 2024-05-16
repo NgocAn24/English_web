@@ -17,13 +17,11 @@ p {
     display: flex;
     height: 300px;
     width: 100%;
-    background-color: rgb(238, 238, 238);
-    align-items: end;
+    align-items: center;
     justify-content: center;
 }
 
 #title_khung {
-    background-color: rgba(207, 201, 192, 0.2);
     width: 90%;
     height: 200px;
     display: flex;
@@ -38,7 +36,6 @@ p {
 }
 
 .body-about__tamnhin {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -63,6 +60,8 @@ p {
 }
 
 .avatar {
+    box-shadow: 5px 5px rgba(127, 127, 127, .4);
+    border-radius: 10px 10px 10px 0;
     margin: 20px;
     min-height: 300px;
     width: 350px;
@@ -79,7 +78,7 @@ p {
 
 #mau {
     background: #2095f3;
-    background: linear-gradient(135deg, #2095f3 0%, #26c6da 100%)!important;
+    background: linear-gradient(135deg, #2095f3 0%, #8cf8b5 100%)!important;
 }
 
 #mau1 {
@@ -105,6 +104,7 @@ p {
 }
 
 .avatar__giua {
+    position: relative;
     background-color: rgb(255, 255, 255, 0.8);
     width: 100%;
     height: 90px;
@@ -119,12 +119,35 @@ p {
 }
 
 .avatar__cuoi {
+    border-radius: 0 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(239, 236, 236);
+    background-color: white;
     width: 100%;
     height: 80px;
+}
+
+.avatar__cuoi .sdt:hover .sdt1 {
+    z-index: 1000;
+    width: 65%;
+}
+
+.sdt {
+    display: flex;
+}
+
+.sdt1 {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    position: relative;
+    white-space: nowrap;
+    height: 100%;
+    width: 0;
+    background-size: cover;
+    z-index: -1;
 }
 
 .avatar__icons {

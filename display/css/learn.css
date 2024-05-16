@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 200px 500px 400px;
+    grid-template-areas: "aa bb cc";
+}
+
+.nd1 {
+    background-color: antiquewhite;
+    grid-area: aa;
+}
+
+.nd2 {
+    background-color: aqua;
+    grid-area: bb;
+}
+
+.nd3 {
+    background-color: blue;
+    grid-area: cc;
+}

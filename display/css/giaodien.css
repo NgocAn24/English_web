@@ -28,10 +28,6 @@ li {
     --light-orange: #FFE0D3;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     background: var(--grey);
     overflow-x: hidden;
