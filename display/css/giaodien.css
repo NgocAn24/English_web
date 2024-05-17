@@ -196,14 +196,26 @@ body {
     box-shadow: -20px -20px 0 var(--light);
 }
 
-#content header .form-search {}
 
-#content header .form-search input {
-    padding: 0 16px;
-    width: 350px;
-    height: 36px;
+/* dang nhap*/
+
+.tk {
+    align-items: center;
+    display: flex;
+    background-color: transparent;
     border: none;
-    border-radius: 36px;
+    cursor: pointer;
+}
+
+.tk:hover {
+    background-color: #abaaaa;
+    border-radius: 30px;
+}
+
+.tk-2 {
+    font-weight: 1200;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 

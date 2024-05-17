@@ -62,15 +62,13 @@
             <header>
 
                 <img class="toggle" src="assets/menu.png" alt="">
+                <div class="login ">
+                    <button class="tk ">
+                        <img src="assets/user.png " alt=" ">
+                        <span class="tk-2 ">Tài khoản</span>
+                    </button>
 
-                <form action="#">
-                    <div class="form-search">
-                        <input type="search" placeholder="Tim Kiem...">
-                    </div>
-                </form>
-                <a href="#">
-                    <img src="assets/user.png" alt="">
-                </a>
+                </div>
             </header>
             <div id="content-main">
 
@@ -177,9 +175,6 @@
     menuBar.addEventListener('click', function() {
         sidebar.classList.toggle('hide');
     })
-
-
-
 
     if (window.innerWidth < 768) {
         sidebar.classList.add('hide');

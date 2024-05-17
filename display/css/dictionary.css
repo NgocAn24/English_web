@@ -1,21 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .Container {
+    height: 100vh;
     width: 100%;
-    height: 900px;
     background: rgb(238, 238, 238);
 }
 
 .header {
+    position: relative;
     width: 100%;
-    height: 200px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, rgb(238, 238, 238), rgb(127, 172, 245));
+}
+
+.header_title {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+.header_history {
+    box-shadow: 2px 2px 2px rgba(226, 223, 223, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(226, 223, 223, 0.7);
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+.form-search {
+    position: relative;
+}
+
+.search-icons {
+    height: 100%;
+    width: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    background-color: rgba(254, 232, 232, 0.7);
 }
 
 .search {
@@ -23,10 +58,76 @@
     width: 500px;
     border: none;
     border-radius: 50px;
+    padding: 0 50px;
 }
 
 .content {
     width: 100%;
+    height: calc(100% - 150px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    grid-template-columns: 70%;
+    grid-template-rows: 200px 100px repeat(2, 1fr);
+}
+
+.tuvung {
+    flex-direction: column;
+    width: 100%;
     height: 100%;
     background-color: aquamarine;
+}
+
+.tu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    font-size: 50px;
+}
+
+.ipa {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;
+}
+
+.mean1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 249, 191, 0.7);
+}
+
+.mean2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 64, 53);
+}
+
+.mean3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+}
+
+.mean_khoa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(237, 243, 239);
+}
+
+.mean_nghia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
 }
