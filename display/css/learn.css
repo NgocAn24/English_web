@@ -1,36 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    margin: 30px;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    height: 500px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 200px 500px 400px;
-    grid-template-areas: "aa bb cc";
-}
-
-.nd1 {
-    background-color: antiquewhite;
-    grid-area: aa;
-}
-
-.nd2 {
-    background-color: aqua;
-    grid-area: bb;
-}
-
-.nd3 {
-    background-color: blue;
-    grid-area: cc;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .container {
+            margin: 30px;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .content {
+            height: 370px;
+            width: 700px;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
+        }
+        
+        .header {
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 90px;
+        }
+        
+        .header h1 {}
+        
+        ul hr {
+            border: 1px dashed;
+            margin-left: 15px;
+            width: 250px;
+            margin-bottom: 10px;
+        }
+        
+        .the {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .the1 {
+            width: 50%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .the1 a {
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .the2 {
+            width: 50%;
+            height: 90%;
+        }
+        
+        .the2 ul {
+            padding: 20px;
+        }
+        
+        .the2 ul li {
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .the2 ul li a {
+            font-size: 20px;
+        }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/giaodien.css">
+    <link rel="stylesheet" href="js/api_dictionary.js">
     <title>Document</title>
 </head>
 
@@ -16,13 +17,19 @@
             <ul class="menu-column .top">
                 <li class="active">
                     <a href="#" onclick="loadPage('learn.html')">
-                        <img class="menu_icon" src="assets/icons8-book-24.png" alt="">
+                        <img class="menu_icon" src="assets/icons8-teaching-24.png" alt="">
                         <span class="text nav-text"> KHÓA HỌC</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('story.html')">
+                        <img class="menu_icon" src="assets/icons8-book-24.png" alt="">
+                        <span class="text nav-text">TRUYỆN</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" onclick="loadPage('dictionary.html')">
+                    <a href="#" onclick="loadPage('dictionary.html', 'js/api_dictionary.js')">
                         <img class="menu_icon" src="assets/icons8-search-24.png" alt="">
                         <span class="text nav-text">TỪ ĐIỂN</span>
                     </a>
@@ -144,16 +151,30 @@
 <script>
     /* chuyen huong trang*/
 
-    function loadPage(page) {
+
+    function loadPage(page, script) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("content-main").innerHTML = this.responseText;
+                if (script) {
+                    // Remove any existing script with the same src
+                    var existingScript = document.querySelector(`script[src="${script}"]`);
+                    if (existingScript) {
+                        existingScript.remove();
+                    }
+                    // Append the new script
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = script;
+                    document.body.appendChild(scriptElement);
+                }
             }
         };
         xhttp.open("GET", page, true);
         xhttp.send();
     }
+
+
 
 
 
