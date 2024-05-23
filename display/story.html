@@ -5,45 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container {
-            height: 600px;
-            width: 600px;
-            border: 1px solid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-        }
-        
-        .box1 {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(248, 101, 9);
-        }
-        
-        .box2 {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(59, 147, 223);
-        }
-        
-        .box3 {
-            width: 100px;
-            height: 100px;
-            background-color: rgb(9, 208, 129);
-        }
-    </style>
+    <link rel="stylesheet" href="css/story.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
+        <div class="box1">
+            <div class="header-box1">
+                <p> Vừa học vừa chill <br> Càng học càng fun <br>
+                    <span>Đọc những mẩu truyện ngắn giúp học tập và phản xạ tốt hơn </span>
+                </p>
+                <img style="width: 150px; height: 150px;" src="assets/truyen/bookstu.png" alt=" ">
+
+            </div>
+            <div class="content-box1 ">
+                <div class="truyen">
+                    <p>Bức tranh của họa sĩ</p>
+                </div>
+                <div class="truyen">
+                    <p>Con ngựa gọi điện</p>
+                </div>
+                <div class="truyen">
+                    <p>Lãng mạn</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box2 ">
+            <div id="truyen t1">
+                <div class="name">
+                    <p>BỨC TRANH CỦA HỌA SĨ</p>
+                </div>
+                <div class="img">
+                    <img src="assets/truyen/pahm.png" alt="">
+                </div>
+                <div id="box">
+                    <div id="boxshow">
+                        <p>
+                            Artist: That, sir, is a painting of a cow grazing grass<br> Visitor: Where is the grass? <br> Artist: The cow has eaten it <br>
+                        </p>
+                    </div>
+
+                    <div id="boxhide">
+                        <p>Họa sĩ: Bức tranh đó đang vẽ 1 con bò đang ăn cỏ đấy thưa ông.
+                            <br> Khách: Có thấy cỏ đâu ?
+                            <br> Họa sĩ: con bò ăn hết cỏ rồi <br>
+                        </p>
+                    </div>
+
+                    <div id="box1show">
+                        <p>
+                            Vistor: But where is the cow ? <br> Artist: You don't think it would be fool enough to stay there after it had eaten all the grass, do you ?
+                        </p>
+                    </div>
+
+                    <div id="box1hide">
+                        <p>Khách: Thế còn con bò đâu ? <br> Họa sĩ: Chứ bộ ông tưởng con bò lại ngu đến mức đứng ỳ đó sau khi đã ăn hết cỏ sao ông!
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
     </div>
 
 
 </body>
+<script src="js/story.js">
+</script>
 
 </html>
