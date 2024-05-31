@@ -175,3 +175,20 @@ p {
 .ring-1 {
     transform: translate(39px, 10px);
 }
+
+
+/* #ring {
+    animation-name: example;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes example {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */

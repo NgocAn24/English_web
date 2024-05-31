@@ -1,11 +1,11 @@
 (function() {
     //chon truyen//truyen 1
-    const mo = document.querySelector('.box1 .truyen.t1'); // Selecting only the specific element with class "t1"
-    const dong = document.getElementById('truyen t1'); // Selecting the element with the id "truyen t1"
+    const mo = document.querySelector('.box1 .truyen.t1');
+    const dong = document.getElementById('truyen t1');
 
     mo.addEventListener('click', function() {
 
-        dong.style.display = 'block'; // Setting display to 'none' when clicked
+        dong.style.display = 'block';
         dong1.style.display = 'none';
         dong2.style.display = 'none';
         mo.style.display = 'none';
@@ -29,8 +29,8 @@
     });
 
     //truyen 2
-    const mo1 = document.querySelector('.box1 .truyen.t2'); // Selecting only the specific element with class "t1"
-    const dong1 = document.getElementById('truyen t2'); // Selecting the element with the id "truyen t1"
+    const mo1 = document.querySelector('.box1 .truyen.t2');
+    const dong1 = document.getElementById('truyen t2');
 
     mo1.addEventListener('click', function() {
         mo1.style.display = 'none';
@@ -55,13 +55,13 @@
     });
 
     //truyen3
-    const mo2 = document.querySelector('.box1 .truyen.t3'); // Selecting only the specific element with class "t1"
-    const dong2 = document.getElementById('truyen t3'); // Selecting the element with the id "truyen t1"
+    const mo2 = document.querySelector('.box1 .truyen.t3');
+    const dong2 = document.getElementById('truyen t3');
 
     mo2.addEventListener('click', function() {
         dong.style.display = 'none';
         dong1.style.display = 'none';
-        dong2.style.display = 'block'; // Setting display to 'none' when clicked
+        dong2.style.display = 'block';
         mo2.style.display = 'none';
         mo.style.display = 'flex';
         mo1.style.display = 'flex';

@@ -4,21 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/translate.js">
     <link rel="stylesheet" href="css/translate.css">
     <title>Document</title>
+
+
 </head>
 
 <body>
     <div class="container">
-        <div class="box1">
-            <textarea placeholder="nhap van ban"></textarea>
-            <textarea placeholder="Ban dich"></textarea>
-            <br>
-            <button>Dịch văn bản</button>
+        <div class="text-input">
+            <div class="controls">
+                <select class="row from">
+                   
+                </select>
+                <img class="change" src="assets/dictionary/icons8-change-35.png" alt="">
+                <select class="row to">
+                    
 
+                </select>
+            </div>
+            <div class="main_text">
+                <textarea class="nhap" spellcheck="false" placeholder="Nhập văn bản "></textarea>
+                <textarea class="dich" spellcheck="false" style="background-color: rgba(128, 128, 128, 0.1);" disabled class="dich"></textarea>
+            </div>
+            <div class="button_tl">
+                <button id="btn_dich">Dịch</button>
+            </div>
         </div>
 
     </div>
 </body>
+<script src="js/translate.js"></script>
 
 </html>

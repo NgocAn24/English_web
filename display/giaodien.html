@@ -34,15 +34,15 @@
                     </a>
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="#" onclick="loadPage('question.html')">
                         <img class="menu_icon" src="assets/giaodien/icons8-quizizz-20.png" alt="">
                         <span class="text nav-text">QUIZ</span>
                     </a>
-                </li>
+                </li> -->
 
                 <li>
-                    <a href="#" onclick="loadPage('translate.html')">
+                    <a href="#" onclick="loadPage('translate.html','js/translate.js')">
                         <img class="menu_icon" src="assets/giaodien/icons8-translate-24.png" alt="">
                         <span class="text nav-text">DỊCH VĂN BẢN</span>
                     </a>
@@ -100,7 +100,7 @@
 
                         <ul>
                             <li><span style="font-size: 20PX;">Mở rộng</span></li>
-                            <li><a href="">QUIZZ</a></li>
+
                             <li><a href="">DỊCH VĂN BẢN</a></li>
                             <li><a href="">TÀI LIỆU</a></li>
                         </ul>
@@ -108,7 +108,7 @@
                         <ul>
                             <li><span style="font-size: 20PX;">Về chúng tôi</span></li>
                             <li>Địa chỉ: Penacony, Yên Nghĩa,Hà Đông</li>
-                            <li>Số điện thoại: 09812781</li>
+                            <li>Số điện thoại: 09xxxxxx</li>
                             <li><a href="">Giới thiệu</a></li>
                         </ul>
 
@@ -116,10 +116,10 @@
                             <span style="font-size: 20PX; font-weight: 900;">Theo dõi chúng tôi</span>
                             <ul class="footer__icons">
                                 <li style="margin-top: 5px;">
-                                    <a href="https://www.facebook.com/" target="_blank" style="justify-content: center;"><img src="assets/giaodien/facebook-38.png"></a>
+                                    <a href="https://www.facebook.com/" target="blank" style="justify-content: center;"><img src="assets/giaodien/facebook-38.png"></a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/NgocAn24/English_web" target="_blank"><img src="assets/giaodien/github.png"></a>
+                                    <a href="https://github.com/NgocAn24/English_web" target="blank"><img src="assets/giaodien/github.png"></a>
                                 </li>
                             </ul>
 
@@ -173,7 +173,9 @@
         xhttp.send();
     }
 
-
+    document.addEventListener('DOMContentLoaded', function() {
+        loadPage('learn.html');
+    });
 
 
 
