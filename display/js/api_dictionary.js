@@ -16,7 +16,8 @@
         "about": {
             "type": "adv",
             "pronunciation": "/əˈbaʊt/",
-            "meaning": "khoảng"
+            "meaning": "khoảng",
+            "example": "walking about the town "
         },
         "above": {
             "type": "prep",
@@ -211,7 +212,8 @@
         "as": {
             "type": "adv",
             "pronunciation": "/æz/ /əz/",
-            "meaning": "cũng, ngang bằng, tương tự"
+            "meaning": "cũng, ngang bằng, tương tự",
+            "example": "he's as tall as his father ;  my car was twice as lagre as yours"
         },
         "ask": {
             "type": "v",

@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     padding: 100px 0;
+    background: linear-gradient(to right, rgb(238, 238, 238), rgba(127, 172, 245, 0.211));
 }
 
 .text-input {

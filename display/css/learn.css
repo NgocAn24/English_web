@@ -3,74 +3,101 @@
             padding: 0;
         }
         
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
         .container {
-            margin: 30px;
-            width: 100vw;
+            background-color: rgba(253, 223, 184, 0.127);
+            padding: 10px;
             height: 100vh;
-        }
-        
-        .content {
-            height: 370px;
-            width: 700px;
-            border: 1px solid;
-            display: flex;
-            flex-direction: column;
-            border-radius: 30px;
-        }
-        
-        .header {
-            margin-top: 15px;
-            margin-left: 15px;
-            height: 90px;
-        }
-        
-        .header h1 {}
-        
-        ul hr {
-            border: 1px dashed;
-            margin-left: 15px;
-            width: 250px;
-            margin-bottom: 10px;
-        }
-        
-        .the {
             width: 100%;
             display: flex;
-            flex-direction: row;
+            justify-content: center;
         }
         
-        .the1 {
-            width: 50%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .the1 a {
-            padding: 10px;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        
-        .the2 {
-            width: 50%;
+        .giaodien {
+            border-radius: 20px;
             height: 90%;
+            width: 100%;
+        }
+        /* nav */
+        
+        .nav {
+            border: 1px solid rgba(246, 196, 104, 0.381);
+            ;
+            background: rgba(245, 222, 179, 0.381);
+            padding: 0 30px 0 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            border-radius: 20px 20px 0 0;
         }
         
-        .the2 ul {
-            padding: 20px;
+        .nav .back button {
+            background: rgba(246, 196, 104, 0.381);
+            height: 50px;
+            width: 100px;
+            border-radius: 20px 20px 20px 0;
+            border: 2px solid rgba(242, 179, 62, 0.381);
         }
         
-        .the2 ul li {
-            padding: 15px;
-            margin-bottom: 10px;
+        .nav ul {
+            width: 100%;
+            gap: 15px;
+            display: flex;
+            justify-content: end;
         }
         
-        .the2 ul li a {
-            font-size: 20px;
+        .nav ul li {
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: rgba(249, 201, 139, 0.51);
+        }
+        /* content */
+        
+        .content {
+            font-size: larger;
+            background: rgba(245, 222, 179, 0.381);
+            width: 100%;
+            height: calc(100% - 50px);
+            border-radius: 0 0 40px 40px;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            place-items: center;
+        }
+        
+        .card {
+            display: grid;
+            grid-template-rows: 70% 30%;
+            width: 90%;
+            height: 80%;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        
+        .card_img img {
+            border-radius: 10px 10px 0 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .card_noidung {
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+        }
+        /*noi dung  */
+        
+        .content .noidung .dn span {
+            color: rgb(248, 143, 83);
+        }
+        
+        .content .noidung .example ul {
+            padding-left: 40px;
+            list-style-position: inside;
+        }
+        
+        .content .noidung .example ul li {
+            list-style: disc;
         }

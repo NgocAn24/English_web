@@ -21,6 +21,7 @@
 }
 
 .header_title {
+    font-family: Quicksand, Helvetica, Arial;
     position: absolute;
     top: 15px;
     left: 50px;
@@ -40,33 +41,41 @@
 
 .form-search {
     position: relative;
+    padding: 3px;
+    border-radius: 10px;
+    background: rgba(127, 172, 245, 0.332);
 }
 
 .search-icons {
-    height: 100%;
+    height: 40px;
     width: 9%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px 0 0 50px;
+    border-radius: 10px 0 0 10px;
     position: absolute;
-    background-color: rgba(254, 232, 232, 0.7);
+    background-color: transparent;
 }
 
 .search {
+    background: transparent;
     height: 40px;
-    width: 500px;
+    width: 400px;
     border: none;
-    border-radius: 50px;
-    padding: 0 60px;
+    border-bottom: 2px solid rgba(97, 57, 255, 0.197);
+    margin-left: 50px;
 }
 
 #search_btn {
+    font-family: Quicksand, Helvetica, Arial;
+    font-size: 12px;
+    font-weight: 600;
     height: 40px;
     width: 70px;
     background: transparent;
-    background-color: rgba(227, 137, 236, 0.2);
+    background-color: rgba(97, 57, 255, 0.356);
     border: none;
+    border-radius: 8px;
 }
 
 .main {
@@ -90,16 +99,19 @@
 }
 
 .tit {
+    font-family: Quicksand, Helvetica, Arial;
     font-size: 20px;
 }
 
 .details p {
+    font-family: Quicksand, Helvetica, Arial;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .meaning .details span {
+    font-family: Quicksand, Helvetica, Arial;
     font-size: 15px;
 }
 
