@@ -31,6 +31,11 @@ li {
 body {
     background: var(--grey);
     overflow-x: hidden;
+    width: 100%;
+}
+
+.body_main {
+    width: 100%;
 }
 
 #sidebar {
@@ -222,6 +227,7 @@ body {
 
 #content-main {
     grid-area: content;
+    max-height: 1fr;
 }
 
 
@@ -282,20 +288,4 @@ body {
     height: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    #content {
-        position: relative;
-        width: calc(100% - 60px);
-        left: 200px;
-    }
-}
-
-
-/* @media only screen and (max-width: 620px) {
-    .body_main {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-areas: ' menu' 'content';
-    }
-} */
+@media only screen and (max-width: 768px) {}

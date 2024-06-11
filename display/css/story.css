@@ -41,6 +41,7 @@
 .header-box1 span {
     font-size: 20px;
     color: grey;
+    flex-wrap: wrap;
 }
 
 .content-box1 {
@@ -288,4 +289,12 @@
 #boxhide_2.hide {
     height: 100%;
     padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas: "box1" "box2";
+        grid-template-columns: 1fr;
+    }
 }

@@ -19,6 +19,7 @@ p {
     width: 100%;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 #title_khung {
@@ -31,10 +32,41 @@ p {
 }
 
 .body-about__into {
-    margin-top: 20px;
-    min-height: 700px;
+    min-height: 800px;
     width: 100%;
 }
+
+
+/*  */
+
+.body-about_trang {
+    padding: 3px;
+    gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    width: 100%;
+    height: 60px;
+}
+
+.trang {
+    border: 1px solid rgba(128, 128, 128, 0.268);
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.trang a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*  */
 
 .body-about__tamnhin {
     display: flex;
@@ -48,12 +80,16 @@ p {
 }
 
 .body-about__box-tn {
+    padding: 10px;
     display: flex;
+    white-space: normal;
     flex-direction: column;
     margin-top: 10px;
-    height: 300px;
-    width: 750px;
+    max-width: 700px;
 }
+
+
+/*  */
 
 .body-about__avatar {
     flex-wrap: wrap;
@@ -89,6 +125,11 @@ p {
 #mau1 {
     background: #26c6da;
     background: linear-gradient(135deg, #26c6da 0%, #9ccc65 100%) !important;
+}
+
+#mau2 {
+    background: #15d2eb;
+    background: linear-gradient(135deg, #9ccc65 0, #26b9da 100%) !important;
 }
 
 .anh {
