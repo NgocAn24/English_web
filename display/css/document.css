@@ -15,18 +15,17 @@
     max-height: 800px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 520px);
     grid-template-rows: repeat( 3, 220px);
     background: linear-gradient(to right, rgb(238, 238, 238), rgba(127, 172, 245, 0.323));
 }
 
 .box-tl {
-    height: 150px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
     background-color: antiquewhite;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 150px 250px;
+    grid-template-rows: 200px;
 }
 
 .box-tl img {
@@ -34,6 +33,7 @@
     height: 100%;
     border: 10px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .container a {
@@ -43,4 +43,9 @@
 
 .nd-tl {
     padding: 10px;
+}
+
+.nd-tl h2 {
+    display: flex;
+    flex-wrap: nowrap;
 }

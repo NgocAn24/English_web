@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body-about {
     min-height: 800px;
     width: 100%;
@@ -23,8 +29,11 @@ p {
 }
 
 #title_khung {
-    width: 90%;
-    height: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    border-radius: 20px 20px 0 0;
+    width: 50%;
+    height: 180px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -50,7 +59,7 @@ p {
 }
 
 .trang {
-    border: 1px solid rgba(128, 128, 128, 0.268);
+    color: gray;
     display: grid;
     place-items: center;
     width: 200px;
@@ -59,7 +68,7 @@ p {
 }
 
 .trang a {
-    color: black;
+    color: gray;
     text-decoration: none;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,32 +78,46 @@ p {
 /*  */
 
 .body-about__tamnhin {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    height: 300px;
-    margin-left: 10px;
-    width: 98.4%;
+    height: 350px;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
 
 .body-about__box-tn {
-    padding: 10px;
+    height: 80%;
+    padding: 20px;
     display: flex;
     white-space: normal;
     flex-direction: column;
     margin-top: 10px;
-    max-width: 700px;
+    max-width: 70%;
+}
+
+
+/*  */
+
+.title_avatar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
 
 
 /*  */
 
 .body-about__avatar {
+    margin-bottom: 50px;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,6 +187,13 @@ p {
     flex-direction: column;
 }
 
+.avater__giua2 p {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    padding: 5px;
+}
+
 .avatar__cuoi {
     border-radius: 0 0 10px 0;
     display: flex;
@@ -202,4 +232,38 @@ p {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+}
+
+
+/*  */
+
+.body-about_taitro {
+    height: 250px;
+    background: linear-gradient(135deg, #2095f3 0%, #8cf8b5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.about_taitro {
+    color: aliceblue;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-about_taitro button {
+    border-radius: 20px;
+    border: none;
+    margin: 15px;
+    padding: 10px;
+    width: 130px;
+}
+
+.body-about_taitro button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
 }
