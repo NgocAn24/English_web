@@ -98,11 +98,6 @@ body {
     position: relative;
 }
 
-#sidebar.hide .menu-column li.active a {
-    color: var(--blue);
-    width: calc(48px-(4px *2));
-}
-
 #sidebar .menu-column li.active::before {
     content: '';
     position: absolute;
@@ -288,4 +283,9 @@ body {
     height: 30px;
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .footer__top2 #an {
+        display: none;
+        
+    }
+}
