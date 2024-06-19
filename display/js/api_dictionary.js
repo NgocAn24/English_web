@@ -4,9 +4,9 @@
     const data = {
         "heartsteel": {
             "type": "Hũ cốt",
-            "pronunciation": "/Mùa 10/",
+            "pronunciation": "/hɑːtstiːl/",
             "meaning": "Hệ tộc dành cho những người muốn Top 8",
-            "example": " Ví dụ như bạn nào đó TA( giấu tên) suốt ngày nhắc hớt tiu nhưng cứ chơi là Top 8 trong tay"
+            "example": " Ví dụ như bạn nào đó TA(giấu tên) suốt ngày nhắc hớt tiu nhưng cứ chơi là Top 8 trong tay"
         },
         "a": {
             "type": "det",

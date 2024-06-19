@@ -1,136 +1,117 @@
 * {
-    margin: 0;
-    padding: 10px;
-    text-decoration: none;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-body {
-    padding: 10px;
+.gioithieu {
+display: flex;
+padding: 10px;
+place-items: center;
+grid-column: 1/5;
+position: absolute;
+width: 100%;
 }
-.main {
-    display: flex;
+.gioithieu p {
+    font-size: large;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #abacb0;
 }
-.about {
-    color: #818181;
-    width: 60vw;
+.page { 
+display: grid;
+grid-template-columns: 20% 20% 20% 40%;
+height: 800px;
+width: 100%;
 }
-.aboutmain {
-    display: flex;
-
-}
-.aboutmain img {
-    width: 400px;
-}
-#yone {
-    margin-right: 20px;
-    width: 350px;
-    margin-top: 200px;
-}
-.buttons {
-    gap: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.buttons button {
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
+.btn .buttons {
+    border-radius: 50%;
     background-color: #dc8f47;
-    padding: 20px;
-    gap: 20px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 7px rgb(82, 47, 16);
+}
+.btn {
+    padding-top: 40px;
+    height: 700px;
+    display: grid;
+    grid-template-rows: repeat(5, 120px);
+    position: relative;
+    margin-top: 100px;
+    
+}
+.btn #b1 {
     position: absolute;
-    transition: all 0.2s ease-in-out;
-    background-size: cover;
 }
-.buttons button:hover {
-    box-shadow: inset 5px 5px 15px #a36836, inset -5px -5px 15px #ffb658;
+.btn #b2 {
+    margin-left: 100px;
+    margin-top: 100px;
 }
-#lesson1 {
-    top: 130px;
-    left: 300px;
-    background-image: url('icons8-star-60.png');
+.btn #b3 {
+    margin-left: 200px;
+    margin-top: 100px;
 }
-#lesson2 {
-    top: 290px;
-    left: 350px;
-    background-image: url('icons8-star-60.png');
+.btn #b4 {
+    margin-left: 100px;
+    margin-top: 100px;
 }
-#lesson3 {
-    top: 450px;
-    left: 400px;
-    background-image: url('icons8-story-60.png');
-}
-#lesson4 {
-    top: 610px;
-    left: 350px;
-    background-image: url('icons8-star-60.png');
-}
-#lesson5 {
-    top: 770px;
-    left: 300px;
-    background-image: url('icons8-cup-60.png');
-}
-.aboutmain {
-    display: flex;
-    align-items: center;
-}  
-.partdescription img {
-    width: 125px;
+.btn #b5 {
+    margin-top: 100px;
 
 }
-.about h2 {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
-}
-.about h2:before,
-.about h2:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 40%;
-    height: 1px;
-    background-color: #000;
-}
-.about h2:before {
-    left: 0;
-}
-.about h2:after {
-    right: 0;
-}   
-.parts {
-    border-left: 3px solid rgba(0,0,0,0.2);
-    width: 20vw;
+.char2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
 }
 .part1 {
     background-color: #b9bcf3;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.part2 {
-    background-color: #b9bcf3;
-    display: flex;
-}
-#textbox {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    height: 50px;
-    font-size: 20px;  
-}
-#triangle1 {
-    width: 80px;
-    position: absolute;
-    top: 110px;
-}
-#triangle2 {
-    width: 80px;
-    position: absolute;
-    top: 395px;
-}
-#learn {
-    width: 100px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 300px;
     border-radius: 20px;
+    margin-bottom: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.b6 {
+    border-radius: 20px;
+    width: 90%;
+    height: 30px;
     background-color: #9778f4;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic {
+    border-radius: 20px;
+    background-color: white;
+    height: 50px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+
+}
+#triangle {
+    position: absolute;
+    bottom: -30px;
+    left: 20px; 
+}
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
