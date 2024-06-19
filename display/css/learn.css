@@ -1,0 +1,147 @@
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_learn img {
+    pointer-events: none;
+    user-select: none;
+}
+
+.container_learn {
+    background: rgba(234, 239, 249, 0.856);
+}
+
+.nl {
+    border: 1px solid rgb(96, 56, 21);
+    background-color: blueviolet;
+    background-color: rgba(220, 143, 71, 1);
+    border-radius: 50%;
+    width: 80px;
+    height: 70px;
+    box-shadow: 0px 7px rgb(82, 47, 16);
+}
+
+.nl:hover {
+    margin-bottom: 2px;
+}
+
+.container_learn {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 45%;
+}
+
+.title_learn {
+    padding: 10px;
+    place-items: center;
+    grid-column: 1/5;
+    position: absolute;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.title_learn p {
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*  */
+
+.map_learn {
+    padding-top: 40px;
+    place-items: center;
+    height: 700px;
+    display: grid;
+    grid-template-rows: repeat(5, 120px);
+}
+
+
+/*  */
+
+.img1_learn {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, #eee, rgba(234, 239, 249, 0.856));
+}
+
+
+/*  */
+
+.unit_learn {
+    border-left: 2px solid rgba(128, 128, 128, 0.432);
+    padding: 5px 20px 5px 5px;
+}
+
+.unit_box {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background: rgba(101, 101, 230, 0.384);
+    border: none;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    height: 250px;
+}
+
+
+/*  */
+
+.unit_left {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.btn_unit {
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(98, 34, 237, 0.608);
+    background-color: rgba(129, 75, 246, 0.608);
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+/*  */
+
+.unit_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.unit_text {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    background: white;
+    position: relative;
+    width: 90%;
+    height: 70px;
+}
+
+.unit_text_a {
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+}

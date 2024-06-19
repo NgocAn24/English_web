@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    min-height: 100vh;
+    min-height: 780px;
     width: 100%;
     display: grid;
     grid-template-columns: 42% 58%;
@@ -232,6 +233,11 @@
     border-left: 8px solid rgba(180, 178, 178, 0.3);
 }
 
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
 #boxhide.hide_1 {
     height: 100%;
     padding: 10px;
@@ -291,7 +297,7 @@
     padding: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
     .container {
         display: grid;
         grid-template-areas: "box1" "box2";

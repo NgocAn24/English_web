@@ -1,0 +1,43 @@
+// quizzes.json
+{
+    "quiz1": {
+        "title": "Quiz 1: Daily Life",
+        "questions": [{
+                "text": "What is your name?",
+                "answers": [
+                    { "text": "John", "correct": true },
+                    { "text": "Mike", "correct": false },
+                    { "text": "Lucy", "correct": false }
+                ]
+            },
+            {
+                "text": "How old are you?",
+                "answers": [
+                    { "text": "20", "correct": false },
+                    { "text": "25", "correct": true },
+                    { "text": "30", "correct": false }
+                ]
+            }
+        ]
+    },
+    "quiz2": {
+        "title": "Quiz 2: Work & Study Life",
+        "questions": [{
+                "text": "Where do you work?",
+                "answers": [
+                    { "text": "Office", "correct": false },
+                    { "text": "School", "correct": true },
+                    { "text": "Home", "correct": false }
+                ]
+            },
+            {
+                "text": "What do you study?",
+                "answers": [
+                    { "text": "Math", "correct": false },
+                    { "text": "English", "correct": true },
+                    { "text": "Science", "correct": false }
+                ]
+            }
+        ]
+    }
+}
