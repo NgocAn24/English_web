@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gioithieu {
+    display: flex;
+    padding: 10px;
+    place-items: center;
+    grid-column: 1/5;
+    position: absolute;
+    width: 100%;
+}
+
+.gioithieu p {
+    font-size: large;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #abacb0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    height: 800px;
+    width: 100%;
+}
+
+.btn .buttons {
+    border-radius: 50%;
+    background-color: #dc8f47;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 7px rgb(82, 47, 16);
+}
+
+.btn {
+    padding-top: 40px;
+    height: 700px;
+    display: grid;
+    grid-template-rows: repeat(5, 120px);
+    position: relative;
+    margin-top: 100px;
+}
+
+.btn #b1 {
+    position: absolute;
+}
+
+.btn #b2 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.btn #b3 {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.btn #b4 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.btn #b5 {
+    margin-top: 100px;
+}
+
+.char2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.part1 {
+    background-color: #b9bcf3;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.b6 {
+    border-radius: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: #9778f4;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    border-radius: 20px;
+    background-color: white;
+    height: 50px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+
+#triangle {
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
