@@ -26,7 +26,7 @@
         <div class="char2">
             <img src="assets/learn/top8.png" style="width: 80%"  alt="">
         </div>
-        <div class="parts" style="padding: 10px;">
+        <div class="parts">
             <div class="part1">
                 <div class="content">
                     <h1 style="font-size: 50px;">Phần 1</h1>
@@ -57,5 +57,91 @@
             </div>
         </div>
     </div>
+    <div class="smallBox" id="smallBox1">
+        <div class="arrow-up"></div>
+        <div class="box-content">
+            <p>Kiến thức cơ bản về Hớt tiu</p>
+            <button class="startButton" data-index="1">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div class="smallBox" id="smallBox2">
+        <div class="arrow-up"></div>
+        <div class="box-content">
+            <p>Kiến thức cơ bản về Hớt tiu</p>
+            <button class="startButton" data-index="2">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div class="smallBox" id="smallBox3">
+        <div class="arrow-up"></div>
+        <div class="box-content">
+            <p>Kiến thức cơ bản về Hớt tiu</p>
+            <button class="startButton" data-index="3">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div class="smallBox" id="smallBox4">
+        <div class="arrow-up"></div>
+        <div class="box-content">
+            <p>Kiến thức cơ bản về Hớt tiu</p>
+            <button class="startButton" data-index="4">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div class="smallBox" id="smallBox5">
+        <div class="arrow-up"></div>
+        <div class="box-content">
+            <p>Kiến thức cơ bản về Hớt tiu</p>
+            <button class="startButton" data-index="5">Bắt đầu</a></button>
+        </div>
+    </div>
+    <script>
+        var buttons = document.querySelectorAll('.buttons');
+        var smallBoxes = document.querySelectorAll('.smallBox');
+        var startButtons = document.querySelectorAll('.startButton');
+    
+        buttons.forEach(function(button, index) {
+            button.addEventListener('click', function() {
+                smallBoxes.forEach(function(box) {
+                    box.style.display = 'none';
+                });
+    
+                var buttonRect = button.getBoundingClientRect();
+                var smallBox = smallBoxes[index];
+    
+                // Điều chỉnh vị trí
+                var boxTop = buttonRect.bottom + window.scrollY + 10;
+                var boxLeft = buttonRect.left + window.scrollX + (button.offsetWidth / 2) - (smallBox.offsetWidth / 2) - 100;
+    
+                smallBox.style.top = boxTop + 'px';
+                smallBox.style.left = boxLeft + 'px';
+                smallBox.style.display = 'block';
+            });
+        });
+        startButtons.forEach(function(startButton) {
+    startButton.addEventListener('click', function() {
+        // lấy index từ thuộc tính data-index của startButton
+        var buttonIndex = parseInt(startButton.getAttribute('data-index')) - 1;
+        // tạo đường dẫn đến file question tương ứng với index
+        var questionFile = 'question' + (buttonIndex + 1) + '.html';
+        // chuyển hướng sang trang questionFile
+        window.location.href = questionFile;
+    });
+});
+        window.addEventListener('resize', function() {
+            var visibleBox = document.querySelector('.smallBox[style*="display: block"]');
+            if (visibleBox) {
+                var index = Array.from(smallBoxes).indexOf(visibleBox);
+                var buttonRect = buttons[index].getBoundingClientRect();
+    
+                var boxTop = buttonRect.bottom + window.scrollY + 10;
+                var boxLeft = buttonRect.left + window.scrollX + (buttons[index].offsetWidth / 2) - (visibleBox.offsetWidth / 2);
+    
+                visibleBox.style.top = boxTop + 'px';
+                visibleBox.style.left = boxLeft + 'px';
+            }
+        });
+    </script> 
 </body>
 </html>
