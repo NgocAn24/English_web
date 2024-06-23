@@ -1,3 +1,15 @@
+(function() {
+    const shows = document.querySelectorAll('#boxshow');
+    const hides = document.querySelectorAll('#boxhide');
+
+    shows.forEach((show, index) => {
+        show.addEventListener('click', function() {
+            hides[index].classList.toggle('hide');
+        });
+    });
+})();
+
+
 const quizzes = {
     "quiz1": {
         "title": "Quiz 1: Daily Life",

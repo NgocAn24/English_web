@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.container_story {
     min-height: 780px;
     width: 100%;
     display: grid;
@@ -13,6 +13,10 @@
     font-family: 'Times New Roman', Times, serif;
     padding: 0 0 10px 0;
     background-color: rgb(255, 255, 255);
+}
+
+.container_story img {
+    user-select: none;
 }
 
 
@@ -184,23 +188,6 @@
     padding: 10px;
 }
 
-#box1show {
-    padding: 40px 10px 20px;
-}
-
-#box1hide {
-    height: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(180, 178, 178, 0.1);
-    border-left: 8px solid rgba(180, 178, 178, 0.3);
-}
-
-#box1hide.hide {
-    height: 100%;
-    padding: 10px;
-}
-
 #boxshow {
     padding: 40px 10px 20px;
 }
@@ -220,82 +207,6 @@
 
 
 /*truyen2*/
-
-#boxshow_1 {
-    padding: 40px 10px 20px;
-}
-
-#boxhide_1 {
-    height: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(180, 178, 178, 0.1);
-    border-left: 8px solid rgba(180, 178, 178, 0.3);
-}
-
-img {
-    pointer-events: none;
-    user-select: none;
-}
-
-#boxhide.hide_1 {
-    height: 100%;
-    padding: 10px;
-}
-
-#box1show_1 {
-    padding: 40px 10px 20px;
-}
-
-#box1hide_1 {
-    height: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(180, 178, 178, 0.1);
-    border-left: 8px solid rgba(180, 178, 178, 0.3);
-}
-
-#box1hide_1.hide {
-    height: 100%;
-    padding: 10px;
-}
-
-#boxshow_1 {
-    padding: 40px 10px 20px;
-}
-
-#boxhide_1 {
-    height: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(180, 178, 178, 0.1);
-    border-left: 8px solid rgba(180, 178, 178, 0.3);
-}
-
-#boxhide_1.hide {
-    height: 100%;
-    padding: 10px;
-}
-
-
-/*truyen 3*/
-
-#boxshow_2 {
-    padding: 40px 10px 20px;
-}
-
-#boxhide_2 {
-    height: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(180, 178, 178, 0.1);
-    border-left: 8px solid rgba(180, 178, 178, 0.3);
-}
-
-#boxhide_2.hide {
-    height: 100%;
-    padding: 10px;
-}
 
 @media only screen and (max-width: 1100px) {
     .container {
