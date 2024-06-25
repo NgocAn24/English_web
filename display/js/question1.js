@@ -1,38 +1,37 @@
-const questions = [
-    {
+const questions = [{
         question: "Nguyen Tuan Anh ___ a HEARTSTEEL player.",
         answers: [
-            { text: "is", correct: true},
-            { text: "are", correct: false},
-            { text: "am", correct: false},
-            { text: "be", correct: false},
+            { text: "is", correct: true },
+            { text: "are", correct: false },
+            { text: "am", correct: false },
+            { text: "be", correct: false },
         ]
     },
     {
         question: "Nguyen Tuan Anh usually got ___ place when he plays HEARTSTEEL",
         answers: [
-            { text: "1st", correct: true},
-            { text: "2nd", correct: false},
-            { text: "4th", correct: false},
-            { text: "8th", correct: false},
+            { text: "1st", correct: true },
+            { text: "2nd", correct: false },
+            { text: "4th", correct: false },
+            { text: "8th", correct: false },
         ]
     },
     {
         question: "Nguyen Ngoc An is a ___ addict",
         answers: [
-            { text: "HEARTSTEEL", correct: false},
-            { text: "Fortune", correct: true},
-            { text: "Heavenly", correct: false},
-            { text: "Storyweaver", correct: false},
+            { text: "HEARTSTEEL", correct: false },
+            { text: "Fortune", correct: true },
+            { text: "Heavenly", correct: false },
+            { text: "Storyweaver", correct: false },
         ]
     },
     {
         question: "Nguyen Ngoc An usually got ___ place when he plays Fortune",
         answers: [
-            { text: "1st", correct: false},
-            { text: "2nd", correct: false},
-            { text: "4th", correct: false},
-            { text: "8th", correct: true},
+            { text: "1st", correct: false },
+            { text: "2nd", correct: false },
+            { text: "4th", correct: false },
+            { text: "8th", correct: true },
         ]
     }
 ];
@@ -42,6 +41,7 @@ const nextButton = document.getElementById("next-btn");
 const nextGameButton = document.getElementById("next-game-btn");
 let currentQuestionIndex = 0;
 let score = 0;
+
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -50,30 +50,33 @@ function startQuiz() {
     nextButton.innerHTML = "Câu kế tiếp";
     showQuestion();
 }
+
 function resetState() {
     nextButton.style.display = "none";
     nextGameButton.style.display = "none";
-    while(answerButtons.firstChild){
+    while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
-  }
+}
+
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-    }else{
+    } else {
         selectedBtn.classList.add("incorrect");
     }
     Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true") {
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
     });
     nextButton.style.display = "block";
 }
+
 function showScore() {
     resetState();
     resetTimer();
@@ -93,28 +96,31 @@ function showScore() {
     timerElement.style.display = "none";
 }
 
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showTimer();
         showQuestion();
-    }else{
+    } else {
         showScore();
     }
 }
-nextButton.addEventListener("click", () =>{
-    if(currentQuestionIndex < questions.length){
+
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
-    }else{
+    } else {
         startQuiz();
     }
 })
+
 nextGameButton.addEventListener("click", () => {
     location.href = 'question2.html';
 });
 const timerElement = document.getElementById("timer");
 let timerInterval;
 let timeLeft = 10;
+
 function showTimer() {
     timerElement.style.display = "block";
 }
@@ -122,12 +128,14 @@ function showTimer() {
 function startTimer() {
     timerInterval = setInterval(updateTimer, 1000);
 }
+
 function formatTime(seconds) {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     const formattedTime = `${mins < 10 ? '0' : ''}${mins}:${secs < 10 ? '0' : ''}${secs}`;
     return formattedTime;
 }
+
 function updateTimer() {
     timeLeft--;
 
@@ -138,15 +146,17 @@ function updateTimer() {
         handleNextButton();
     }
 }
+
 function resetTimer() {
     clearInterval(timerInterval);
     timeLeft = 10;
     timerElement.textContent = `Thời gian còn lại: ${formatTime(timeLeft)}`;
 }
-function showQuestion(){
-    resetState(); 
-    resetTimer(); 
-    
+
+function showQuestion() {
+    resetState();
+    resetTimer();
+
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = "Question " + questionNum + ": " + currentQuestion.question;
@@ -155,7 +165,7 @@ function showQuestion(){
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
-        if(answer.correct){
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
@@ -163,6 +173,7 @@ function showQuestion(){
 
     startTimer();
 }
+
 function hideTimer() {
     timerElement.style.display = "none";
 }

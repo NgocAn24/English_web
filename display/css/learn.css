@@ -5,66 +5,64 @@
 }
 
 .gioithieu {
-    display: flex;
     padding: 10px;
     place-items: center;
     grid-column: 1/5;
     position: absolute;
-    width: 100%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
 }
 
 .gioithieu p {
-    font-size: large;
+    font-size: 20px;
     font-weight: bold;
     padding: 0 10px;
     color: #abacb0;
 }
 
+.page img {
+    pointer-events: none;
+    user-select: none;
+}
+
 .page {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 40%;
-    height: 800px;
     width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 45%;
 }
 
 .btn .buttons {
     border-radius: 50%;
     background-color: #dc8f47;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 70px;
     box-shadow: 0px 7px rgb(82, 47, 16);
 }
 
 .btn {
     padding-top: 40px;
+    place-items: center;
     height: 700px;
     display: grid;
     grid-template-rows: repeat(5, 120px);
-    position: relative;
-    margin-top: 100px;
-}
-
-.btn #b1 {
-    position: absolute;
 }
 
 .btn #b2 {
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: 50%;
 }
 
 .btn #b3 {
-    margin-left: 200px;
-    margin-top: 100px;
+    margin-left: 80%;
 }
 
 .btn #b4 {
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: 40%;
 }
 
 .btn #b5 {
-    margin-top: 100px;
+    margin-left: 10%;
 }
 
 .char2 {
@@ -72,51 +70,57 @@
     align-items: center;
     justify-content: center;
 }
+
 .parts {
-    padding-top: 50px;
-    padding-right: 10px;
+    scrollbar-width: none;
+    overflow: scroll;
+    border-left: 2px solid rgba(128, 128, 128, 0.432);
+    padding: 5px 20px 5px 5px;
 }
 
 .part1 {
-    background-color: #b9bcf3;
-    padding: 10px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    background: rgba(101, 101, 230, 0.384);
+    border: none;
     display: grid;
     grid-template-columns: 40% 60%;
-    height: 300px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin: 40px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
 }
 
 .content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .b6 {
-    border-radius: 20px;
-    width: 90%;
-    height: 30px;
-    background-color: #9778f4;
-    padding: 20px;
     font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(98, 34, 237, 0.608);
+    background-color: rgba(129, 75, 246, 0.608);
+    padding: 10px;
+    margin-bottom: 40px;
 }
 
 .pic {
-    border-radius: 20px;
-    background-color: white;
-    height: 50px;
-    padding: 30px;
-    text-align: center;
-    margin-top: 20px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    width: 90%;
+    height: 70px;
     position: relative;
 }
 
@@ -128,17 +132,18 @@
 
 .content2 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
 .smallBox {
     display: none;
     position: absolute;
-    background-color: #dc8f47;
+    background-color: #f6ab66;
     padding: 15px;
-    width: 200px;
-    height: 100px;
+    width: 220px;
+    height: 110px;
     border-radius: 10px;
     z-index: 1000;
 }
@@ -149,7 +154,8 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #dc8f47;
+    border-bottom: 10px solid #f6ab66;
+    ;
     top: -10px;
     left: calc(50% - 10px);
 }
@@ -157,19 +163,21 @@
 .smallBox .box-content {
     padding-top: 5px;
 }
+
 .smallBox .startButton {
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     text-align: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 3px #5ba0e9;
 }
 
 .smallBox::before {
