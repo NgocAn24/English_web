@@ -171,6 +171,10 @@ ul li {
     color: #fff;
 }
 
+span.phone-number {
+    font-size: 25px;
+}
+
 .intro-sponsor button {
     padding: 0.5rem 2rem;
     color: #000;

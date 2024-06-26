@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+.logo img {
+    height: 40px;
+}
+.user-actions button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.box{
+    background: rgb(242, 188, 242);
+    padding: 10px 10px;
+}
+.khoahoc{
+    
+    padding-left: 20px;
+}
+
+.navbar {
+    width: 100%;
+    min-width: 50%;
+    z-index: 1000;
+    background-color: gray;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+.navbar a {
+    color: #fff;
+    margin-right: 2em;
+    text-decoration: none;
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid #fff;
+}
+/*.navbar a:first-child, .navbar a:last-child {
+    border-right: none;
+}*/

@@ -19,7 +19,7 @@
                 <span>Please fill in the form to create an account:</span>
                 <form action="">
                     <input type="text" id="fullname" placeholder="Full name" />
-                    <input type="text" id="reg-email" placeholder="Email" />
+                    <input type="text" id="reg-email" placeholder="Username" />
                     <input type="password" id="reg-password" placeholder="Password" />
                     <input type="password" id="confirm-password" placeholder="Confirm password" />
                     <button id="register-btn">ĐĂNG KÝ</button>
@@ -67,19 +67,25 @@
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const registerForm = document.getElementById("register-form");
+            const registerForm = document.querySelector("form");
 
             registerForm.addEventListener("submit", function(e) {
                 e.preventDefault();
 
-                const fullname = document.getElementById("fullname").value;
-                const email = document.getElementById("reg-email").value;
-                const password = document.getElementById("reg-password").value;
-                const confirmPassword =
-                    document.getElementById("confirm-password").value;
+                const fullname = document.getElementById("fullname").value.trim();
+                const email = document.getElementById("reg-email").value.trim();
+                const password = document.getElementById("reg-password").value.trim();
+                const confirmPassword = document
+                    .getElementById("confirm-password")
+                    .value.trim();
+
+                if (!fullname || !email || !password || !confirmPassword) {
+                    alert("Vui lòng nhập đầy đủ thông tin!");
+                    return;
+                }
 
                 if (password !== confirmPassword) {
-                    alert("Passwords do not match. Please try again.");
+                    alert("Mật khẩu không khớp! Vui lòng nhập lại.");
                     return;
                 }
 
@@ -93,7 +99,7 @@
                 accounts.push(newAccount);
                 localStorage.setItem("accounts", JSON.stringify(accounts));
 
-                alert("Registration successful! You can now log in.");
+                alert("Đăng ký thành công!");
                 window.location.href = "index.html";
             });
         });

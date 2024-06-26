@@ -18,7 +18,7 @@
                 <h2>get started</h2>
                 <span>Please login to your account by filling these form:</span>
                 <form id="login-form" action="javascript:void(0);">
-                    <input type="text" id="email" placeholder="Email" />
+                    <input type="text" id="email" placeholder="Username" />
                     <input type="password" id="password" placeholder="Password" />
                     <div class="form-group">
                         <span><input type="checkbox" name="" id="" /> Ghi nhớ tài khoản</span
@@ -42,8 +42,8 @@
             <img src="img/icons8-z-100.png" alt="" />
           </div>
           <p>
-            Website thi thử TOEIC online miễn phí có chấm điểm và xem đáp án
-            ngay, kiểm tra trình độ TOEIC chính xác, nhanh chóng!
+            Website học tiếng anh online miễn phí có chấm điểm và xem đáp án
+            ngay, kiểm tra trình độ tiếng anh chính xác, nhanh chóng!
           </p>
         </div>
         <div class="footer-block">
@@ -67,7 +67,7 @@
             <li><a href="">Giới thiệu</a></li>
             <li><a href="">Điều khoản sử dụng</a></li>
             <li><a href="">Chính sách bảo mật</a></li>
-            <li><a href="">Cơ chế giải quyết</a></li>
+      
             <li><a href="">Tư vấn</a></li>
           </ul>
         </div>
@@ -92,9 +92,13 @@
         loginForm.addEventListener("submit", function (e) {
           e.preventDefault();
 
-          const email = document.getElementById("email").value;
-          const password = document.getElementById("password").value;
-          const storedAccount = JSON.parse(localStorage.getItem("account"));
+          const email = document.getElementById("email").value.trim();
+          const password = document.getElementById("password").value.trim();
+
+          if (!email || !password) {
+            alert("Vui lòng nhập đầy đủ thông tin!");
+            return;
+          }
 
           const accounts = JSON.parse(localStorage.getItem("accounts"));
 
