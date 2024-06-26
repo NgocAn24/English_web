@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
-a {
+.intro-page a {
     text-decoration: none;
     color: black;
 }
 
-ul li {
+#mau {
+    background: #2095f3;
+    background: linear-gradient(135deg, #2095f3 0%, #8cf8b5 100%)!important;
+}
+
+#mau1 {
+    background: #26c6da;
+    background: linear-gradient(135deg, #26c6da 0%, #9ccc65 100%) !important;
+}
+
+#mau2 {
+    background: #15d2eb;
+    background: linear-gradient(135deg, #9ccc65 0, #26b9da 100%) !important;
+}
+
+.intro-page ul li {
     list-style: none;
 }
 
@@ -89,6 +104,7 @@ ul li {
 }
 
 .founder-item {
+    box-shadow: 5px 5px rgba(127, 127, 127, .4);
     width: 70%;
     max-width: 400px;
     display: flex;

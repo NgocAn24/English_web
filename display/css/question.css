@@ -10,10 +10,11 @@
 
 #timer {
     right: 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .title_quizz {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -29,14 +30,14 @@
 .app {
     padding: 40px;
     font-family: 'Arial', sans-serif;
-    background: purple;
+    background: linear-gradient(to right, rgb(238, 238, 238), rgba(127, 172, 245, 0.211));
     width: 100%;
     height: 720px;
 }
 
 .app h1 {
     font-size: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -48,7 +49,7 @@
 
 .quiz h2 {
     font-size: 18px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .btn {
@@ -71,8 +72,8 @@
 }
 
 .btn:hover:not([disabled]) {
-    background: #222;
-    color: #fff;
+    background: #22222276;
+    color: #000000;
 }
 
 .btn:disabled {
