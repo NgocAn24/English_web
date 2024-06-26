@@ -286,6 +286,5 @@ body {
 @media only screen and (max-width: 768px) {
     .footer__top2 #an {
         display: none;
-        
     }
 }

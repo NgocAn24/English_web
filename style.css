@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    font-size: 20px;
+    display: flex;
+    background-color: #f4f4f4;
+    align-items: end;
+    justify-content: end;
+}
+
+.register-form {
+    width: 726px;
+}
+
+.login-form,
+.register-form {
+    flex-shrink: 0;
+    padding: 7rem;
+    background-color: transparent;
+    align-self: self-start;
+    left: 0;
+    position: absolute;
+}
+
+.background {
+    max-height: 630px;
+    text-align: end;
+}
+
+.background img {
+    width: 100%;
+    max-height: 630px;
+    object-fit: scale-down;
+}
+
+.login-form h1,
+.register-form h1 {
+    color: #04457a;
+    font-family: MyriadPro-Regular;
+    font-size: 47.81px;
+    line-height: 57.372px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.login-form h2,
+.register-form h2 {
+    color: #ff960b;
+    font-family: MyriadPro-Bold;
+    font-size: 68.13px;
+    line-height: 68.13px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 10px 15px;
+    margin-top: 1rem;
+}
+
+#login-btn,
+#register-btn {
+    background-color: #ff960b;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1.48148px;
+    color: #fff;
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0px 13px 14.5px 0px;
+    padding: 5.4375px 10.875px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#register-btn {
+    margin-top: 2rem;
+}
+
+#signup-btn {
+    cursor: pointer;
+    align-items: center;
+    background-color: #04457a;
+    border-color: #04457a;
+    border-style: solid;
+    border-width: 1.48148px;
+    box-shadow: #9b9b9b 0px 1px 3px 0px;
+    color: #fff;
+    display: inline-block;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0px 13px 14.5px 0px;
+    padding: 5.4375px 10.875px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: self-start;
+    width: 20%;
+    min-width: 258px;
+    margin-bottom: 1rem;
+}
+
+.footer-block h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-block ul li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1 px solid #f4f4f4;
+}
+
+.footer-block ul li ion-icon {
+    margin-right: 0.5rem;
+}
+
+.footer-block ul[class="link"] li:hover {
+    border-bottom: 1px solid #000;
+}
+
+.footer-logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .login-form {
+        padding: 5rem 1rem;
+        width: 450px;
+    }
+    .register-form {
+        padding: 5rem 1rem;
+        width: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-form {
+        width: 450px;
+    }
+    .register-form {
+        width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 450px;
+        align-self: none;
+        padding: 4rem 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .register-form {
+        width: 450px;
+        align-self: none;
+        padding: 4rem 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .background {
+        display: none;
+    }
+    .content {
+        align-items: center;
+        position: relative;
+        background-image: url("/bg_login.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 67%;
+        z-index: 1;
+    }
+    .content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba( 244, 244, 244, 0.8);
+        /* Light gray with 80% opacity */
+        z-index: -1;
+        /* Place the overlay behind the content */
+    }
+}

@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+.intro-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-top {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+
+.intro-top-content h2 {
+    margin-bottom: 1rem;
+}
+
+.intro-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0px 10px;
+    height: 200px;
+}
+
+.intro-top-menu {
+    text-align: center;
+    padding: 10px;
+}
+
+.intro-top-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.intro-top-menu li a {
+    color: #87827b;
+}
+
+.intro-desc {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+}
+
+.intro-desc h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.intro-desc p {
+    margin-bottom: 0.5rem;
+}
+
+.intro-founder {
+    padding: 3rem 0;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-founder h2 {
+    margin-bottom: 2rem;
+}
+
+.founder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.founder-item {
+    width: 70%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 0.5rem 2rem 0.5rem;
+}
+
+.founder-item-head {
+    background-color: #d0e1f5;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1rem;
+}
+
+.founder-item__img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.founder-item-info {
+    text-align: center;
+    width: 100%;
+    background-color: #daf1f8;
+    padding: 1rem;
+}
+
+.founder-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.founder-duty {
+    font-size: 16px;
+    color: #87827b;
+}
+
+.founder-item-contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.founder-item-contact ion-icon {
+    font-size: 30px;
+    color: #000;
+}
+
+.intro-sponsor {
+    background: linear-gradient(45deg, #2a94ee, #8af7b7);
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro-sponsor-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+}
+
+.intro-sponsor-content h2,
+.intro-sponsor-content p {
+    color: #fff;
+}
+
+.intro-sponsor button {
+    padding: 0.5rem 2rem;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* For tablets: */
+    .intro-desc {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 3rem;
+    }
+    .founder-item {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .intro-desc {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 10rem;
+    }
+    .founder-item {
+        width: 27%;
+    }
+}

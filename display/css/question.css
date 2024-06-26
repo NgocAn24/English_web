@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.quizContent {
+    height: 100%;
+}
+
 #timer {
     right: 0;
     color: white;
@@ -12,11 +16,6 @@
 .title_quizz {
     display: flex;
     justify-content: space-between;
-}
-
-body {
-    width: 100%;
-    height: 100%;
 }
 
 #answer-buttons {

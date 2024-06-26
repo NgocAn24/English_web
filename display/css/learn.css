@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
 .gioithieu {
     padding: 10px;
     place-items: center;
@@ -33,7 +37,7 @@
     grid-template-columns: 15% 20% 20% 45%;
 }
 
-.btn .buttons {
+.btn_learn .buttons {
     border-radius: 50%;
     background-color: #dc8f47;
     width: 80px;
@@ -41,28 +45,12 @@
     box-shadow: 0px 7px rgb(82, 47, 16);
 }
 
-.btn {
+.btn_learn {
     padding-top: 40px;
     place-items: center;
     height: 700px;
     display: grid;
     grid-template-rows: repeat(5, 120px);
-}
-
-.btn #b2 {
-    margin-left: 50%;
-}
-
-.btn #b3 {
-    margin-left: 80%;
-}
-
-.btn #b4 {
-    margin-left: 40%;
-}
-
-.btn #b5 {
-    margin-left: 10%;
 }
 
 .char2 {

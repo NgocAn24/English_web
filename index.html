@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="login-form">
+                <h1>Welcome,</h1>
+                <h2>get started</h2>
+                <span>Please login to your account by filling these form:</span>
+                <form id="login-form" action="javascript:void(0);">
+                    <input type="text" id="email" placeholder="Email" />
+                    <input type="password" id="password" placeholder="Password" />
+                    <div class="form-group">
+                        <span><input type="checkbox" name="" id="" /> Ghi nhớ tài khoản</span
+              >
+              <a href="">Quên mật khẩu</a>
+            </div>
+            <div class="buttons">
+              <button id="login-btn">ĐĂNG NHẬP</button>
+              <button id="signup-btn" type="button">ĐĂNG KÝ</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="background">
+          <img src="img/bg_login.png" alt="" />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-block">
+          <div class="footer-logo">
+            <img src="img/icons8-z-100.png" alt="" />
+          </div>
+          <p>
+            Website thi thử TOEIC online miễn phí có chấm điểm và xem đáp án
+            ngay, kiểm tra trình độ TOEIC chính xác, nhanh chóng!
+          </p>
+        </div>
+        <div class="footer-block">
+          <h3>Thông tin liên hệ</h3>
+          <ul>
+           
+            <li>Địa chỉ: Penacony, Yên Nghĩa,Hà Đông</li>
+            <li>Số điện thoại: 09xxxxxx</li>
+            <li><a href="display/giaodien.html">Giới thiệu</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h3>Thông tin website</h3>
+          <ul class="link">
+            <li><a href="display/giaodien.html">Khóa học</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h3>Thông tin sử dụng</h3>
+          <ul class="link">
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Điều khoản sử dụng</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Cơ chế giải quyết</a></li>
+            <li><a href="">Tư vấn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.getElementById("login-form");
+        const signupBtn = document.getElementById("signup-btn");
+
+        const defaultAccount = {
+          fullname: "admin",
+          email: "admin@gmail.com",
+          password: "123",
+        };
+
+        // Check if account is already in localStorage
+        if (!localStorage.getItem("accounts")) {
+          localStorage.setItem("accounts", JSON.stringify([defaultAccount]));
+        }
+
+        loginForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          const storedAccount = JSON.parse(localStorage.getItem("account"));
+
+          const accounts = JSON.parse(localStorage.getItem("accounts"));
+
+          const account = accounts.find(
+            (acc) => acc.email === email && acc.password === password
+          );
+
+          if (account) {
+            window.location.href = "display/giaodien.html";
+          } else {
+            alert("Email hoặc mật khẩu không đúng. Vui lòng thử lại.");
+          }
+        });
+
+        signupBtn.addEventListener("click", function () {
+          window.location.href = "register.html";
+        });
+      });
+    </script>
+  </body>
+</html>

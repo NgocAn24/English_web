@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div id="register-form" class="register-form">
+                <h1>Create an account</h1>
+                <h2>get started</h2>
+                <span>Please fill in the form to create an account:</span>
+                <form action="">
+                    <input type="text" id="fullname" placeholder="Full name" />
+                    <input type="text" id="reg-email" placeholder="Email" />
+                    <input type="password" id="reg-password" placeholder="Password" />
+                    <input type="password" id="confirm-password" placeholder="Confirm password" />
+                    <button id="register-btn">ĐĂNG KÝ</button>
+                </form>
+            </div>
+            <div class="background">
+                <img src="img/bg_login.png" alt="" />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-block">
+                <div class="footer-logo">
+                    <img src="img/icons8-z-100.png" alt="" />
+                </div>
+                <p>
+                    Website thi thử TOEIC online miễn phí có chấm điểm và xem đáp án ngay, kiểm tra trình độ TOEIC chính xác, nhanh chóng!
+                </p>
+            </div>
+            <div class="footer-block">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+
+                    <li>Địa chỉ: Penacony, Yên Nghĩa,Hà Đông</li>
+                    <li>Số điện thoại: 09xxxxxx</li>
+                    <li><a href="">Giới thiệu</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Thông tin website</h3>
+                <ul class="link">
+                    <li><a href="display/giaodien.html">Khóa học</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Thông tin sử dụng</h3>
+                <ul class="link">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Cơ chế giải quyết</a></li>
+                    <li><a href="">Tư vấn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const registerForm = document.getElementById("register-form");
+
+            registerForm.addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                const fullname = document.getElementById("fullname").value;
+                const email = document.getElementById("reg-email").value;
+                const password = document.getElementById("reg-password").value;
+                const confirmPassword =
+                    document.getElementById("confirm-password").value;
+
+                if (password !== confirmPassword) {
+                    alert("Passwords do not match. Please try again.");
+                    return;
+                }
+
+                const newAccount = {
+                    fullname: fullname,
+                    email: email,
+                    password: password,
+                };
+
+                const accounts = JSON.parse(localStorage.getItem("accounts")) || [];
+                accounts.push(newAccount);
+                localStorage.setItem("accounts", JSON.stringify(accounts));
+
+                alert("Registration successful! You can now log in.");
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

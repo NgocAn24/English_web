@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/giaodien.css">
     <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
             <a href="#" class="brand menu_icon"><img src="assets/giaodien/icons8-z-45.png" alt=""> english</a>
             <ul class="menu-column .top">
                 <li class="active">
-                    <a href="#" onclick="loadPage('learn.html','question1.html','js/question1.js')">
+                    <a href="#" onclick="loadPage('learn.html','js/learn.js')">
                         <img class="menu_icon" src="assets/giaodien/icons8-teaching-24.png" alt="">
                         <span class="text nav-text">KHÓA HỌC</span>
                     </a>
@@ -34,13 +36,6 @@
                     </a>
                 </li>
 
-                <!-- <li>
-                    <a href="#" onclick="loadPage('question.html')">
-                        <img class="menu_icon" src="assets/giaodien/icons8-quizizz-20.png" alt="">
-                        <span class="text nav-text">QUIZ</span>
-                    </a>
-                </li> -->
-
                 <li>
                     <a href="#" onclick="loadPage('translate.html','js/translate.js')">
                         <img class="menu_icon" src="assets/giaodien/icons8-translate-24.png" alt="">
@@ -55,7 +50,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" onclick="loadPage('about.html')">
+                    <a href="#" onclick="loadPage('about.html','js/about.js')">
                         <img class="menu_icon" src="assets/giaodien/icons8-about-20.png" alt="">
                         <span class="text nav-text">GIỚI THIỆU</span>
                     </a>
@@ -174,7 +169,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        loadPage('learn.html');
+        loadPage('learn.html', 'js/learn.js');
     });
 
 
