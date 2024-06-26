@@ -6,8 +6,16 @@
     <link rel="website icon" type="png" href="assets/giaodien/icons8-z-45.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story/Câu chuyện</title>
+    <title id="page-title">Câu chuyện</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            color: blue; 
+            font-style: normal;
+        }
+    </style>
 </head>
+<<<<<<< HEAD
 
 <body style="background-color: #babaeb;">
     <div class="nav" style="background-color: #babaeb;">
@@ -64,3 +72,41 @@
 </body>
 
 </html>
+=======
+<body>
+    <div class="nav">
+        <a href="learn.html" style="text-decoration: none;"><img src="assets/giaodien/back.png" style="width: 25px;"><span style="position: relative; top: -7px; left: 20px;">Trở về trang chủ</span></a>
+        <h1 id="story-title">Câu chuyện của một người chơi HEARTSTEEL</h1>
+    </div>
+    <div class="story">
+        <div class="space1"></div>
+        <div class="description">
+            <h2>Từ vựng</h2>
+            <ul type="none">
+                <li><p id="word">passionate</p><p>đam mê</p></li>
+                <li><p id="word">evening</p><p>buổi tối</p></li>
+                <li><p id="word">creatively</p><p>sáng tạo</p></li>
+                <li><p id="word">aiming for</p><p>hướng đến</p></li>
+                <li><p id="word">decision</p><p>quyết định</p></li>
+                <li><p id="word">assemble</p><p>sắp xếp</p></li>
+                <li><p id="word">unfavorably</p><p>không thuận lợi</p></li>
+                <li><p id="word">reflecting</p><p>suy ngẫm</p></li>
+                <li><p id="word">mistakes</p><p>sai lầm</p></li>
+            </ul>
+        </div>
+        <div class="space2"></div>
+        <div class="mainstory">
+            <p>Tuấn Anh, người được biết đến với tư duy chiến lược sắc bén và <em>passionate</em> với thử thách, tham gia một trận Đấu Trường Chân Lý vào <em>an evening</em>.</p>
+            <p>Chọn lựa <em>creatively</em> cho bộ đôi Heartsteel, anh đã tỉ mỉ <em>assemble</em> các quân cờ và trang bị, <em>aiming for</em> chiến thắng. Mỗi <em>decision</em>, từ vị trí của các quân cờ cho đến thời điểm quản lý kinh tế, đều được đưa ra <em>with careful precision</em> qua hàng giờ nghiên cứu và thực hành.</p>
+            <p>Tuy nhiên, dù có cân nhắc kỹ lưỡng, trận đấu <em>unfavorably</em> with Tuấn Anh. Từng vòng đấu, <em>efforts</em> của anh đều không đủ để vượt qua đối thủ, những người dường như <em>predicted</em> mọi chiến thuật của anh.</p>
+            <p>Với một tiếng thở dài của sự <em>disappointment</em>, Tuấn Anh chỉ đạt <em>8th place</em>. <em>Reflecting</em> về trận đấu, anh quyết tâm học hỏi từ những <em>mistakes</em> và quay lại mạnh mẽ hơn lần sau, nhận thức rằng mỗi thất bại là cơ hội để trưởng thành trong hành trình chinh phục sự thành thạo.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.mainstory em').addClass('highlight');
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 32f52a2856d108c018ab754fc22dc54f8322c345
