@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.nav h1 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.language-switch {
+    position: absolute;
+    right: 10px;
+}
+.story {
+    background-color:  #abacb0;
+}
+.p1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+.p1 img {
+    margin-right: 20px;
+}
+.p1 p {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    text-align: justify;
+}
