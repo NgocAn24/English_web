@@ -4,13 +4,14 @@
 <head>
     <link rel="stylesheet" href="css/learn.css">
     <link rel="stylesheet" href="css/question.css">
+    <link rel="stylesheet" href="css/learn_story.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Các bài học</title>
 </head>
 
 <body>
-    <div class="page">
+    <div class="page" id="page">
         <div class="gioithieu">
             <hr style="width: 25%;">
             <p>Giới thiệu bản thân</p>
@@ -22,7 +23,7 @@
         <div class="btn_learn">
             <button class="buttons" id="quiz1-btn"><img src="assets/learn/icons8-star-60.png" alt=""></button>
             <button class="buttons" style=" margin-left: 50%;" id="quiz2-btn"><img src="assets/learn/icons8-star-60.png" alt=""></button>
-            <button class="buttons" style=" margin-left: 80%;"><img src="assets/learn/icons8-story-60.png" alt=""></button>
+            <button class="buttons" style=" margin-left: 80%;" id="storybtn"><img src="assets/learn/icons8-story-60.png" alt=""></button>
             <button class="buttons" style=" margin-left: 40%;" id="quiz3-btn"><img src="assets/learn/icons8-star-60.png" alt=""></button>
             <button class="buttons" style=" margin-left: 10%;" id="quiz4-btn"> <img src="assets/learn/icons8-cup-60.png" alt=""></button>
         </div>
@@ -77,8 +78,83 @@
     <div id="quizContent">
         <!-- Nội dung cho từng bài kiểm tra sẽ được chèn động vào đây -->
     </div>
+    <div id="storyContent">
+        <div class="nav">
+            <button class="backbtn"><img src="assets/giaodien/back.png" style="width: 25px;"></button>
 
-    <script src="js/learn.js"></script>
+            <h1 id="story-title">Câu chuyện của một người chơi HEARTSTEEL</h1>
+        </div>
+        <div class="story">
+            <div class="space1"></div>
+            <div class="description">
+                <h2>Từ vựng</h2>
+                <ul type="none">
+                    <li>
+                        <p id="word">passionate</p>
+                        <p>đam mê</p>
+                    </li>
+                    <li>
+                        <p id="word">evening</p>
+                        <p>buổi tối</p>
+                    </li>
+                    <li>
+                        <p id="word">creatively</p>
+                        <p>sáng tạo</p>
+                    </li>
+                    <li>
+                        <p id="word">aiming for</p>
+                        <p>hướng đến</p>
+                    </li>
+                    <li>
+                        <p id="word">decision</p>
+                        <p>quyết định</p>
+                    </li>
+                    <li>
+                        <p id="word">assemble</p>
+                        <p>sắp xếp</p>
+                    </li>
+                    <li>
+                        <p id="word">unfavorably</p>
+                        <p>không thuận lợi</p>
+                    </li>
+                    <li>
+                        <p id="word">reflecting</p>
+                        <p>suy ngẫm</p>
+                    </li>
+                    <li>
+                        <p id="word">mistakes</p>
+                        <p>sai lầm</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="space2"></div>
+            <div class="mainstory">
+                <div class="img_story">
+                    <img src="" alt="">
+                </div>
+                <pre>
+
+
+
+
+                </pre>
+                <p>Tuấn Anh, người được biết đến với tư duy chiến lược sắc bén và <em>passionate</em> với thử thách, tham gia một trận Đấu Trường Chân Lý vào <em>an evening</em>.</p>
+                <p>Chọn lựa <em>creatively</em> cho bộ đôi Heartsteel, anh đã tỉ mỉ <em>assemble</em> các quân cờ và trang bị, <em>aiming for</em> chiến thắng. Mỗi <em>decision</em>, từ vị trí của các quân cờ cho đến thời điểm quản lý kinh tế, đều được đưa
+                    ra
+                    <em>with careful precision</em> qua hàng giờ nghiên cứu và thực hành.</p>
+                <p>Tuy nhiên, dù có cân nhắc kỹ lưỡng, trận đấu <em>unfavorably</em> with Tuấn Anh. Từng vòng đấu, <em>efforts</em> của anh đều không đủ để vượt qua đối thủ, những người dường như <em>predicted</em> mọi chiến thuật của anh.</p>
+                <p>Với một tiếng thở dài của sự <em>disappointment</em>, Tuấn Anh chỉ đạt <em>8th place</em>. <em>Reflecting</em> về trận đấu, anh quyết tâm học hỏi từ những <em>mistakes</em> và quay lại mạnh mẽ hơn lần sau, nhận thức rằng mỗi thất bại là
+                    cơ hội để trưởng thành trong hành trình chinh phục sự thành thạo.</p>
+            </div>
+        </div>
+        <!-- Nội dung cho từng bài kiểm tra sẽ được chèn động vào đây -->
+    </div>
+
+
 </body>
+
+<script src="js/learn.js">
+</script>
+
 
 </html>

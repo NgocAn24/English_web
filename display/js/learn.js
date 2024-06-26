@@ -1,5 +1,19 @@
 (function() {
 
+    const storyBtn = document.querySelector("#storybtn");
+    const backBtn = document.querySelector(".backbtn");
+    const page = document.querySelector("#page");
+    const showStory = document.querySelector("#storyContent");
+
+    storyBtn.addEventListener("click", () => {
+        page.style.display = "none";
+        showStory.style.display = "block";
+    });
+    backBtn.addEventListener("click", () => {
+        page.style.display = "grid";
+        showStory.style.display = "none";
+    });
+
 
     const quizzes = [{
             quizName: "quiz1",
@@ -287,22 +301,16 @@
 
     function displayQuiz(quizName) {
         const quiz = quizzes.find(quiz => quiz.quizName === quizName);
-
         if (!quiz) {
             console.error(`Quiz '${quizName}' not found.`);
             return;
         }
-
         const questions = quiz.questions;
-
         // Clear previous quiz content
         quizContent.innerHTML = "";
         document.querySelector('.page').style.display = 'none';
         document.getElementById('quizContent').style.display = 'block';
         // Show quiz content
-
-
-        // HTML template for quiz interface
         quizContent.innerHTML = `
         <div class="app">
             <h1>${quiz.title}</h1>
@@ -323,6 +331,9 @@
             </div>
         </div>
     `;
+        // 
+
+
         // 
         const questionElement = document.getElementById("question");
         const answerButtons = document.getElementById("answer-buttons");

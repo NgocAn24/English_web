@@ -8,6 +8,10 @@
     display: none;
 }
 
+#storyContent {
+    display: none;
+}
+
 .gioithieu {
     padding: 10px;
     place-items: center;
