@@ -49,6 +49,12 @@
     height: 70px;
     box-shadow: 0px 7px rgb(82, 47, 16);
 }
+.btn_learn .buttons.green {
+    background-color: green;
+}
+.btn_learn .buttons.orange {
+    background-color: #dc8f47;
+}
 
 .btn_learn {
     padding-top: 40px;
