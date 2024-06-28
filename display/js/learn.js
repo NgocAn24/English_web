@@ -4,8 +4,6 @@
     const backBtn = document.querySelector(".backbtn");
     const page = document.querySelector("#page");
     const showStory = document.querySelector("#storyContent");
-    const lessonBtn1 = document.querySelector('#btn1');
-    const lessonBtn2 = document.querySelector('#btn2');
 
     storyBtn.addEventListener("click", () => {
         page.style.display = "none";
@@ -14,20 +12,7 @@
     backBtn.addEventListener("click", () => {
         page.style.display = "grid";
         showStory.style.display = "none";
-    }); 
-    lessonBtn1.addEventListener("click", () => {
-        page.style.display = "grid";
-        showStory.style.display = "none";
-
-    })
-    document.getElementById('btn1').addEventListener('click', function() {
-        const buttons = document.querySelectorAll('.btn_learn .buttons');
-        buttons.forEach(button => {
-            button.classList.remove('green');
-            button.classList.add('orange');
-        });
     });
-<<<<<<< HEAD
     // 
     const p1Btn = document.querySelector("#p1");
     const p2Btn = document.querySelector("#p2");
@@ -48,28 +33,6 @@
         char.style.display = "none";
     });
 
-=======
-    //đổi màu nút ấn để sang phần 2
-    document.getElementById('btn2').addEventListener('click', function() {
-        const buttons = document.querySelectorAll('.btn_learn .buttons');
-        buttons.forEach(button => {
-            button.classList.remove('orange');
-            button.classList.add('green');
-        });
-        
-    const storytext = `
-        <p>Minh, một người chơi có kinh nghiệm và đầy sáng tạo, quyết định thử thách bản thân trong một trận Đấu Trường Chân Lý vào <em>một buổi sáng</em>.</p>
-        <p>Anh đã chọn <em>một cách thông minh</em> để kết hợp đội hình với bộ đôi Shadow, và cẩn thận <em>sắp xếp</em> các quân cờ và trang bị, <em>hướng tới</em> chiến thắng. Mỗi <em>quyết định</em>, từ vị trí của các quân cờ đến việc quản lý tài chính, đều được đưa ra <em>với sự chính xác tỉ mỉ</em> sau nhiều giờ nghiên cứu và thực hành.</p>
-        <p>Dù gặp phải những đối thủ mạnh, Minh vẫn kiên trì và <em>nỗ lực</em> không ngừng. Mỗi vòng đấu, <em>cố gắng</em> của anh đã giúp anh vượt qua nhiều đối thủ, những người không thể <em>dự đoán</em> chiến thuật của anh.</p>
-        <p>Cuối cùng, Minh đã đạt được <em>hạng nhất</em>. <em>Suy ngẫm</em> về trận đấu, anh thấy tự hào về những gì đã đạt được và biết rằng sự kiên trì và học hỏi từ những <em>sai lầm</em> chính là chìa khóa để đạt tới thành công.</p>
-    `;
-    });
-    
-    function changetoPart2() {
-        document.querySelector(".storytext").innerHTML = storytext;
-    }
-    lessonBtn2.addEventListener("click", changetoPart2);
->>>>>>> 319ba93c1d72a83dc3bc71dbc5638d2e11b46428
     const quizzes = [{
             quizName: "quiz1",
             title: "Bai 1",

@@ -53,9 +53,11 @@
     height: 70px;
     box-shadow: 0px 7px rgb(82, 47, 16);
 }
+
 .btn_learn .buttons.green {
     background-color: green;
 }
+
 .btn_learn .buttons.orange {
     background-color: #dc8f47;
 }
@@ -138,4 +140,82 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .parts {
+        width: 100%;
+    }
+    #quiz2-btn {
+        margin-left: 40%;
+    }
+    #storybtn {
+        margin-left: 80%;
+    }
+    #quiz3-btn {
+        margin-left: 40%;
+    }
+    #quiz4-btn {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .parts {
+        display: none;
+    }
+    #quiz1-btn {
+        margin-left: 300%;
+    }
+    #quiz2-btn {
+        margin-left: 400%;
+    }
+    #storybtn {
+        margin-left: 500%;
+    }
+    #quiz3-btn {
+        margin-left: 400%;
+    }
+    #quiz4-btn {
+        margin-left: 300%;
+    }
+    .char {
+        margin-left: 30%;
+    }
+    .gioithieu {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .parts {
+        display: none;
+    }
+    #quiz1-btn {
+        margin-left: 400%;
+    }
+    #quiz2-btn {
+        margin-left: 500%;
+    }
+    #storybtn {
+        margin-left: 600%;
+    }
+    #quiz3-btn {
+        margin-left: 500%;
+    }
+    #quiz4-btn {
+        margin-left: 400%;
+    }
+    .char {
+        margin-left: -20%;
+    }
+    .gioithieu {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .gioithieu p {
+        font-size: small;
+    }
 }
