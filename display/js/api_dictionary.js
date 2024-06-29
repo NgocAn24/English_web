@@ -11,7 +11,8 @@
         "a": {
             "type": "det",
             "pronunciation": "/eɪ/",
-            "meaning": "một, nào đó"
+            "meaning": "một, nào đó",
+            "example": " a very cold day"
         },
         "about": {
             "type": "adv",

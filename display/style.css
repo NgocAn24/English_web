@@ -87,6 +87,7 @@ input[type="password"] {
     line-height: 27px;
     padding: 10px 15px;
     margin-top: 1rem;
+    outline: none;
 }
 
 #login-btn,

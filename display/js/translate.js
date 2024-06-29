@@ -12,7 +12,6 @@
         selectTag = document.querySelectorAll('select'),
         nut = document.querySelector("#btn_dich");
 
-    // Populate the select elements with options
     selectTag.forEach((tag, id) => {
         for (let country_code in countries) {
             let selected = id == 0 ? country_code == "en" ? "selected" : "" : country_code == "vi" ? "selected" : "";
@@ -21,7 +20,7 @@
         }
     });
 
-    // Swap the input and output languages and their text values
+
     change.addEventListener("click", () => {
         let tempText = nhap.value,
             tempLang = selectTag[0].value;
@@ -31,14 +30,14 @@
         selectTag[1].value = tempLang;
     });
 
-    // Clear the output if the input is empty
+
     nhap.addEventListener('keyup', () => {
         if (!nhap.value) {
             dich.value = "";
         }
     });
 
-    // Handle the button click to perform translation
+
     nut.addEventListener("click", () => {
         let text = nhap.value.trim(),
             nhapvanban = selectTag[0].value,
