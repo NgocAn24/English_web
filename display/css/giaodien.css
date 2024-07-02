@@ -207,7 +207,7 @@ body {
 }
 
 .tk:hover {
-    background-color: #abaaaa;
+    background-color: #abaaaa5e;
     border-radius: 30px;
 }
 
@@ -215,6 +215,47 @@ body {
     font-weight: 1200;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.show_into {
+    width: 200px;
+    display: none;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 7px;
+    right: 0;
+    position: absolute;
+    border-radius: 10px;
+    border: black;
+    height: auto;
+    background-color: white;
+    box-shadow: 1px -1px 20px -9px black;
+}
+
+.info_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.exit_main {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.show_into.hide {
+    transition: 0.8s ease-in;
+    display: grid;
 }
 
 
@@ -286,6 +327,5 @@ body {
 @media only screen and (max-width: 768px) {
     .footer__top2 #an {
         display: none;
-        
     }
 }

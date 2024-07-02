@@ -68,11 +68,28 @@
             <header>
 
                 <img class="toggle" src="assets/giaodien/menu.png" alt="">
-                <div class="login ">
-                    <button class="tk ">
-                        <img src="assets/giaodien/user.png" alt=" ">
-                        <span class="tk-2 ">Chào Top 8</span>
+
+                <div class="login " style="position: relative;">
+                    <button class="tk "> 
+                        <img src="assets/giaodien/icons8-user-40.png" alt=" ">
+                    
+                        <button class="show_into">
+                        <div class="info_main" >
+                            <img src="assets/giaodien/icons8-user-60.png" alt=" ">
+                            <div style="display: flex; flex-direction: column;
+                            align-items: start;">
+                               <span>Tuấn Anh</span> 
+                               <p style="color: gray;">@top8</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="exit_main" >
+                          <img src="assets/giaodien/icons8-exit-20.png" alt=" ">
+                            <span style="padding: 0 20px;">Đăng xuất</span>  
+                        </div>
+                        </button>
                     </button>
+
 
                 </div>
             </header>
@@ -201,6 +218,13 @@
     if (window.innerWidth < 768) {
         sidebar.classList.add('hide');
     }
+    //
+
+    const tkBTN = document.querySelector('.tk ');
+    const tkBTN1 = document.querySelector('.show_into');
+    tkBTN.addEventListener('click', function() {
+        tkBTN1.classList.toggle('hide');
+    })
 </script>
 
 </html>

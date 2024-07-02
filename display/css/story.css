@@ -208,8 +208,8 @@
 
 /*truyen2*/
 
-@media only screen and (max-width: 1100px) {
-    .container {
+@media only screen and (max-width: 1200px) {
+    .container_story {
         display: grid;
         grid-template-areas: "box1" "box2";
         grid-template-columns: 1fr;
