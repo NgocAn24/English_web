@@ -38,6 +38,13 @@ body {
     width: 100%;
 }
 
+.nav-text {
+    color: rgb(109, 109, 109);
+    font-weight: 550;
+    letter-spacing: .8px;
+    font-size: 15px;
+}
+
 #sidebar {
     grid-area: menu;
     position: fixed;
@@ -86,7 +93,7 @@ body {
 }
 
 #sidebar .menu-column li {
-    height: 48px;
+    height: 55px;
     background: transparent;
     margin-left: 10px;
     border-radius: 50px 0 0 50px;
@@ -142,7 +149,7 @@ body {
     min-width: calc(60px-((4px+6px)*2));
     display: flex;
     justify-content: center;
-    margin: 13px;
+    margin: 8px;
     margin-right: 20px;
 }
 

@@ -28,20 +28,12 @@ button.buttons_learn.maup2 {
     box-shadow: 0 2px rgb(34, 8, 46);
 }
 
-#p2 {
-    display: none;
-}
-
-#char2 {
-    display: none;
-}
-
 .gioithieu {
+    background: linear-gradient(to right, #eeeeee7f, rgba(255, 255, 255, 0));
     padding: 10px;
     place-items: center;
     grid-column: 1/5;
-    position: absolute;
-    width: 55%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -59,21 +51,53 @@ button.buttons_learn.maup2 {
     user-select: none;
 }
 
+.container_learn {
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.content_learn {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+}
+
 .page {
+    background-color: rgba(255, 255, 255, 0.237);
     width: 100%;
     height: 700px;
     display: grid;
-    grid-template-columns: 15% 20% 20% 45%;
+    /* grid-template-columns: 15% 20% 20% 45%; */
+    grid-template-columns: 60% 40%;
+}
+
+.name_cup {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons_cup {
+    display: grid;
+    place-items: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
 }
 
 .btn_learn .buttons_learn {
+    cursor: pointer;
     border-radius: 50%;
+    border: none;
     background-color: #dc8f47;
-    width: 80px;
-    height: 70px;
+    width: 75px;
+    height: 65px;
     /* width: 32%;
     height: 58%; */
-    box-shadow: 0 5px rgb(82, 47, 16);
+    box-shadow: 0 7px rgb(174, 107, 48);
     transition: all 0.2s;
 }
 
@@ -91,6 +115,10 @@ button.buttons_learn.maup2 {
     grid-template-rows: repeat(5, 120px);
 }
 
+.char {
+    background: linear-gradient(to right, #eeeeee, rgba(255, 255, 255, 0));
+}
+
 .char2 {
     display: flex;
     align-items: center;
@@ -99,7 +127,7 @@ button.buttons_learn.maup2 {
 
 .parts {
     scrollbar-width: none;
-    overflow: scroll;
+    overflow-y: scroll;
     border-left: 2px solid rgba(128, 128, 128, 0.432);
     padding: 5px 20px 5px 5px;
 }
