@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/giaodien.css">
+    <script type="module" src="giaodien.js"></script>
     <title>Document</title>
 </head>
 
@@ -77,15 +78,17 @@
                         <div class="info_main" >
                             <img src="assets/giaodien/icons8-user-60.png" alt=" ">
                             <div style="display: flex; flex-direction: column;
+                            justify-content: space-evenly;
                             align-items: start;">
-                               <span>Tuấn Anh</span> 
-                               <p style="color: gray;">@top8</p>
+                               <span id="loggedUserFName">mèn mén</span> 
+                              
+                               <span id="loggedUserLName" style="color: gray;" >@top8</span>
                             </div>
                         </div>
                         <hr>
                         <div class="exit_main" >
                           <img src="assets/giaodien/icons8-exit-20.png" alt=" ">
-                            <span style="padding: 0 20px;">Đăng xuất</span>  
+                            <span id="logout" style="padding: 0 20px;">Đăng xuất</span>  
                         </div>
                         </button>
                     </button>

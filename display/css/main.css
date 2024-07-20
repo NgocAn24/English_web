@@ -1,11 +1,3 @@
-body {
-    width: 100%;
-    height: 100vh;
-    cursor: url("assets/rocket-24.png"), auto;
-    background-image: url('assets/bg.jpg');
-    background-size: cover;
-}
-
 a {
     color: aliceblue;
     text-decoration: none;

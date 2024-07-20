@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenglish</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="login.css">
-
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
+<style>
+    body {
+        width: 100%;
+        height: 100vh;
+        cursor: url("assets/home/rocket-24.png"), auto;
+        background-image: url('assets/home/bg.jpg');
+        background-size: cover;
+    }
+</style>
 
 <body>
     <div class="">
         <header class="header" style="margin-top: 20px;">
             <div class="logo">
-                <img src="assets/z_logo.png" width=" 90px" height="70px" alt=" ">
+                <img src="assets/home/z_logo.png" width=" 90px" height="70px" alt=" ">
             </div>
             <!-- End LOGO Section -->
             <div class="nav">
@@ -31,7 +40,7 @@
                 <!-- End Menu Section -->
                 <div class="login ">
                     <button class="tk ">
-                        <img src="assets/user.png " alt=" ">
+                        <img src="assets/home/user.png " alt=" ">
                         <span class="tk-2 ">Tài khoản</span>
                     </button>
 
@@ -56,19 +65,19 @@
                         <li>
                             <ul class="ring-2 ">
                                 <li>
-                                    <a id="ring" href="/phanhoi "><img src="assets/phanhoi.png " style="width:80px;height:80px; cursor: url( 'assets/icons8-rocket-32.png'), auto "></a>
+                                    <a id="ring" href="/phanhoi "><img src="assets/home/phanhoi.png " style="width:80px;height:80px; cursor: url( 'assets/home/icons8-rocket-32.png'), auto "></a>
                                 </li>
                             </ul>
                         </li>
                         <li>
 
                             <li class="ring-center ">
-                                <a id="ring" href="/English_web/display/giaodien.html" style="cursor: url( 'assets/icons8-rocket-32.png'), auto; "><img src="assets/hocngay.png " style="width:131px;height:117px; "></a>
+                                <a id="ring" href="giaodien.html" style="cursor: url( 'assets/home/icons8-rocket-32.png'), auto; "><img src="assets/home/hocngay.png " style="width:131px;height:117px; "></a>
                             </li>
                             <li>
                                 <ul class="ring-1 ">
                                     <li>
-                                        <a id="ring" href="/tailieu " style="cursor: url( 'assets/icons8-rocket-32.png'), auto "><img src="assets/tailieu.png " style="width:67px;height:67px; "></a>
+                                        <a id="ring" href="/tailieu " style="cursor: url( 'assets/home/icons8-rocket-32.png'), auto "><img src="assets/home/tailieu.png " style="width:67px;height:67px; "></a>
 
                                     </li>
                             </li>
@@ -77,7 +86,7 @@
 
                         <ul class="ring-3 ">
                             <li>
-                                <a id="ring" href="/gioithieu " style="cursor: url( 'assets/icons8-rocket-32.png'), auto "><img src="assets/Gioithieu.png " alt=" "></a>
+                                <a id="ring" href="/gioithieu " style="cursor: url( 'assets/home/icons8-rocket-32.png'), auto "><img src="assets/home/Gioithieu.png " alt=" "></a>
                             </li>
                         </ul>
                         </li>
@@ -106,22 +115,25 @@
                 <div class="form1__container ">
                     <div class="form1__header ">
                         <h3 class="form1__title ">ĐĂNG KÍ</h3>
-                    </div>
 
+                    </div>
+                    <div class="messageDiv" id="signUpMessage" style="display: none;"></div>
                     <div class="form1__form ">
-                        <div class="form1__group ">
-                            <input type="text " class="form1__input " placeholder=" Email hoặc Username ">
+                        <div class="form1__group_name ">
+                            <input type="text" class="form1__name" id="lName" placeholder=" Biệt danh " required>
+                            <input type="text" class="form1__name" id="fName" placeholder=" Tên " required>
                         </div>
                         <div class="form1__group ">
-                            <input type="password " class="form1__input " placeholder=" Mật khẩu ">
+                            <input type="email" class="form1__input " id="rEmail" placeholder=" Email hoặc Username " required>
                         </div>
                         <div class="form1__group ">
-                            <input type="password " class="form1__input " placeholder=" Nhập lại mật khẩu ">
+                            <input type="password" class="form1__input " id="rPassword" placeholder=" Mật khẩu " required>
                         </div>
+
                     </div>
 
                     <div class="form1__controller ">
-                        <button class="btn__dk ds ">ĐĂNG KÍ</button>
+                        <button class="btn__dk ds " id="submitSignUp">ĐĂNG KÍ</button>
                         <button class="btn__back ds ">TRỞ LẠI</button>
                     </div>
                 </div>
@@ -132,20 +144,21 @@
                 <div class="form2__container ">
                     <div class="form2__header ">
                         <h3 class="form2__title ">ĐĂNG NHẬP</h3>
+                        <div class="messageDiv" id="signInMessage" style="display: none;"></div>
                     </div>
                     <div class="form2__form ">
                         <div class="form2__group ">
-                            <input type="text " class="form2__input " placeholder=" Email hoặc Username ">
+                            <input type="email" id="email" class="form2__input " placeholder=" Email hoặc Username ">
                         </div>
                         <div class="form2__group ">
-                            <input type="password " class="form1__input " placeholder=" Mật khẩu ">
+                            <input type="password" id="password" class="form1__input " placeholder=" Mật khẩu ">
                         </div>
                         <div class="qmk "><span style="color: aliceblue; ">Quên mật khẩu ?</span></div>
 
                     </div>
 
                     <div class="form2__controller ">
-                        <button class="btn__dn ds ">ĐĂNG NHẬP</button>
+                        <button class="btn__dn ds  " id="submitSignIn">ĐĂNG NHẬP</button>
                         <button class="btn__rs ds ">ĐĂNG KÍ</button>
                         <button class="btn__exit ds ">THOÁT</button>
                     </div>
@@ -176,7 +189,7 @@
 
         if (btn_dk) {
             btn_dk.addEventListener('click', function() {
-                if (dk) dk.style.display = 'block';
+                if (dk) dk.style.display = 'flex';
                 if (hide_dn) hide_dn.style.display = 'none';
                 if (btn_form) btn_form.style.display = 'none';
 

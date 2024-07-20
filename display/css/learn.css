@@ -126,17 +126,22 @@ button.buttons_learn.maup2 {
     flex-direction: column;
 }
 
+
+/*  */
+
 .b6 {
     font-size: 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid rgba(98, 34, 237, 0.608);
     background-color: rgba(129, 75, 246, 0.608);
+    box-shadow: 0px 3px rgba(108, 43, 248, 0.608);
     padding: 10px;
     margin-bottom: 40px;
 }
 
 .b6:hover {
-    background-color: rgba(108, 43, 248, 0.608);
+    box-shadow: 0px 1px rgba(108, 43, 248, 0.608);
+    transform: translateY(3px);
 }
 
 .pic {

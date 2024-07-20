@@ -399,6 +399,7 @@
                 }
                 button.disabled = true;
             });
+            clearInterval(timerInterval);
             nextButton.style.display = "block";
         }
 
