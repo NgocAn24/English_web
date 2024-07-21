@@ -88,7 +88,7 @@
                         <hr>
                         <div class="exit_main" >
                           <img src="assets/giaodien/icons8-exit-20.png" alt=" ">
-                            <span id="logout" style="padding: 0 20px;">Đăng xuất</span>  
+                            <span id="logout" style="padding: 0 20px;">Thoát</span>  
                         </div>
                         </button>
                     </button>
@@ -228,6 +228,20 @@
     tkBTN.addEventListener('click', function() {
         tkBTN1.classList.toggle('hide');
     })
+
+    function showContent(contentId) {
+        // Hide all content containers
+        var containers = document.querySelectorAll('.container_learn');
+        containers.forEach(function(container) {
+            container.style.display = 'none';
+        });
+
+        // Show the selected content container
+        var content = document.getElementById(contentId);
+        if (content) {
+            content.style.display = 'block';
+        }
+    }
 </script>
 
 </html>

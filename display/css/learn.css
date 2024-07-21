@@ -17,19 +17,40 @@
     display: none;
 }
 
-button.buttons_learn.maup2 {
-    background-color: rgb(179, 2, 255);
-    box-shadow: 0px 5px rgb(34, 8, 46);
+#cl_2 button.buttons_learn {
+    background-color: rgba(200, 73, 255, 0.734);
+    box-shadow: 0px 7px rgb(137, 44, 181);
 }
 
-.buttons_learn.maup2:hover {
+#cl_2 .buttons_learn:hover {
     background-color: rgb(179, 2, 255);
     transform: translateY(5px);
     box-shadow: 0 2px rgb(34, 8, 46);
 }
 
+#cl_3 button.buttons_learn {
+    background-color: rgb(254, 179, 75);
+    box-shadow: 0px 7px rgb(202, 139, 56);
+}
+
+#cl_3 .buttons_learn:hover {
+    background-color: rgb(255 150 0);
+    transform: translateY(5px);
+    box-shadow: 0 2px rgb(34, 8, 46);
+}
+
+#cl_4 button.buttons_learn {
+    background-color: rgb(255 200 0);
+    box-shadow: 0px 7px rgb(202, 139, 56);
+}
+
+#cl_4 .buttons_learn:hover {
+    background-color: rgb(255 200 0);
+    transform: translateY(5px);
+    box-shadow: 0 2px rgb(34, 8, 46);
+}
+
 .gioithieu {
-    background: linear-gradient(to right, #eeeeee7f, rgba(255, 255, 255, 0));
     padding: 10px;
     place-items: center;
     grid-column: 1/5;
@@ -64,7 +85,7 @@ button.buttons_learn.maup2 {
 }
 
 .page {
-    background-color: rgba(255, 255, 255, 0.237);
+    background-color: rgb(253, 253, 253);
     width: 100%;
     height: 700px;
     display: grid;
@@ -81,6 +102,7 @@ button.buttons_learn.maup2 {
 }
 
 .buttons_cup {
+    background: none;
     display: grid;
     place-items: center;
     position: relative;
@@ -116,7 +138,8 @@ button.buttons_learn.maup2 {
 }
 
 .char {
-    background: linear-gradient(to right, #eeeeee, rgba(255, 255, 255, 0));
+    place-items: center;
+    display: grid;
 }
 
 .char2 {
