@@ -4,16 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Sections</title>
-    <style>
-        .content {
-            display: none;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/question.css">
+    <link rel="stylesheet" href="js/learn.js">
 </head>
 
 <body>
-    <img loading="lazy" decoding="async" src="http://www.cartoonbrew.com/wp-content/uploads/2022/10/duolingo_jumprope.gif" alt="Duolingo Jumprope" width="500" height="500" class="alignnone size-full wp-image-221892">
+    <!-- <div class="app">
+        <h1>${quiz.title[1]}</h1>
+        <div class="quiz">
+            <div class="title_quizz">
+                <div class="char_quizz">
+                    <div class="Gif_false" style="display: none;"><img src="https://tenor.googleapis.com/v2/media?id=5349669092978368522&amp;format=optimizedgif&amp;client_key=tenor_web&amp;appversion=browser-r20240715-1&amp;access_token=ya29.a0AXooCguF0vmG6ChrQg6kDz1NLVnv4M_X_fI7gsGR4kAxWjaS2UvPqEQWPQTp6YO20vrIQOn2JZE87lc7HgG2E_NGg8nn5GPwdEcTxs6Xy4is157CJVJEMLQc4zZNMEHy79Q9xy_d7BmmKW5aLwRXId7aDnCmcVYbSwaCgYKASkSARASFQHGX2MiPOnH-z3hxv9RdKjq73fovQ0169&amp;key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                            width="120px" height="150px" alt="" loading="lazy"></div>
+
+                    <div class="Gif"><img src="https://tenor.googleapis.com/v2/media?id=9263485430691611333&amp;format=optimizedgif&amp;client_key=tenor_web&amp;appversion=browser-r20240715-1&amp;access_token=ya29.a0AXooCguF0vmG6ChrQg6kDz1NLVnv4M_X_fI7gsGR4kAxWjaS2UvPqEQWPQTp6YO20vrIQOn2JZE87lc7HgG2E_NGg8nn5GPwdEcTxs6Xy4is157CJVJEMLQc4zZNMEHy79Q9xy_d7BmmKW5aLwRXId7aDnCmcVYbSwaCgYKASkSARASFQHGX2MiPOnH-z3hxv9RdKjq73fovQ0169&amp;key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                            width="120px" height="150px" alt="" loading="lazy"></div>
+
+                    <div class="Gif_true" style="display: none;"><img src="https://tenor.googleapis.com/v2/media?id=3782786082564410225&amp;format=optimizedgif&amp;client_key=tenor_web&amp;appversion=browser-r20240715-1&amp;access_token=ya29.a0AXooCguF0vmG6ChrQg6kDz1NLVnv4M_X_fI7gsGR4kAxWjaS2UvPqEQWPQTp6YO20vrIQOn2JZE87lc7HgG2E_NGg8nn5GPwdEcTxs6Xy4is157CJVJEMLQc4zZNMEHy79Q9xy_d7BmmKW5aLwRXId7aDnCmcVYbSwaCgYKASkSARASFQHGX2MiPOnH-z3hxv9RdKjq73fovQ0169&amp;key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                            width="120px" height="150px" alt="" loading="lazy"></div>
+                    <h2 id="question">Câu hỏi</h2>
+                </div>
+
+                <div id="timer">Thời gian còn lại: <span id="seconds">00:30</span></div>
+            </div>
+            <div id="answer-buttons" class="btn-container">
+                <button class="btn">Đáp án 1</button>
+                <button class="btn">Đáp án 2</button>
+                <button class="btn">Đáp án 3</button>
+                <button class="btn">Đáp án 4</button>
+            </div>
+            <div id="button-container">
+                <button id="next-btn">Tiếp tục</button>
+                <button id="back-btn" class="buttons">Quay lại</button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="kq_quiz">
+        <div class="img_kq">
+            <img loading="lazy" decoding="async" src="http://www.cartoonbrew.com/wp-content/uploads/2022/10/duolingo_lesson_end.gif" alt="Duolingo Lesson End" width="275" height="300" class="alignnone size-full wp-image-221893">
+        </div>
+        <div class="text_quiz">
+            <h1>Hoàn thành bài học!</h1>
+        </div>
+        <div class="diem_quiz">
+            <div class="box_diem">
+                <div class="title_diem">
+                    <p>SỐ CÂU ĐÚNG</p>
+                </div>
+                <div class="text_diem">
+                    <img src="assets/learn/icons8-approved-checkmark-symbol-to-verify-the-result-28.png" alt="">
+                    <h1 id="score">${score}</h1>
+                </div>
+            </div>
+            <div class="box_diem" id="diem1">
+                <div class="title_diem">
+                    <p>TỔNG</p>
+                </div>
+                <div class="text_diem">
+                    <img class="_1F1Qc" src="https://d35aaqx5ub95lt.cloudfront.net/images/icons/9ace13520a375f5661415ff7d470f243.svg">
+                    <h1 id="total-questions"> ${questions.length}</h1>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="buttonq-container">
+            <button id="next-btnq">LÀM LẠI</button>
+            <button id="exit-btnq" class="buttons">TIẾP TỤC</button>
+        </div>
+    </div>
+
 </body>
+
 
 </html>
