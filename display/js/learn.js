@@ -1,17 +1,39 @@
 (function() {
 
     const storyBtn = document.querySelector("#storybtn");
+    const storyBtn2 = document.querySelector("#storybtn2");
+    const storyBtn3 = document.querySelector("#storybtn3");
     const backBtn = document.querySelector(".backbtn");
+    const backBtn2 = document.querySelector(".backbtn2");
+    const backBtn3 = document.querySelector(".backbtn3");
     const page = document.querySelector("#page");
     const showStory = document.querySelector("#storyContent");
+    const showStory2 = document.querySelector("#storyContent2");
+    const showStory3 = document.querySelector("#storyContent3");
 
     storyBtn.addEventListener("click", () => {
         page.style.display = "none";
         showStory.style.display = "block";
     });
+    storyBtn2.addEventListener("click", () => {
+        page.style.display = "none";
+        showStory2.style.display = "block";
+    });
+    storyBtn3.addEventListener("click", () => {
+        page.style.display = "none";
+        showStory3.style.display = "block";
+    });
     backBtn.addEventListener("click", () => {
         page.style.display = "grid";
         showStory.style.display = "none";
+    });
+    backBtn2.addEventListener("click", () => {
+        page.style.display = "grid";
+        showStory2.style.display = "none";
+    });
+    backBtn3.addEventListener("click", () => {
+        page.style.display = "grid";
+        showStory3.style.display = "none";
     });
     // 
 
