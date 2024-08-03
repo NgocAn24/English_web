@@ -859,15 +859,16 @@
                 <div class="title_quizz">
                     <div class="char_quizz">
                         <div class="Gif_false" style="display: none;">
-                            <img src="https://tenor.googleapis.com/v2/media?id=5349669092978368522&format=optimizedgif&client_key=tenor_web&appversion=browser-r20240715-1&access_token=ya29.a0AXooCgt8-bfCWmhyJk9iOneL-Z2a4R4w4DEONiUmTw8dCYqTwDAvqQpMTdi9AK2aSfVwFHoFTTkRVPdK9dv-kufnkcaIW7J4Tvw8mC_t4MzkPk3p_exhJC37V3Bd3N4-1moTHq54IIObHXTyCPpkqaHVTHFi0j6-D7MaCgYKAU0SARASFQHGX2MiM-9Yj_jMndZ_XaIi0tarOg0170&key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                            <img src="https://media1.tenor.com/m/Sj3XskDcoAoAAAAC/false.gif"
                                  width="120px" height="150px" alt="" loading="lazy">
                         </div>
                         <div class="Gif">
-                            <img src="https://tenor.googleapis.com/v2/media?id=9263485430691611333&format=optimizedgif&client_key=tenor_web&appversion=browser-r20240715-1&access_token=ya29.a0AXooCgt8-bfCWmhyJk9iOneL-Z2a4R4w4DEONiUmTw8dCYqTwDAvqQpMTdi9AK2aSfVwFHoFTTkRVPdK9dv-kufnkcaIW7J4Tvw8mC_t4MzkPk3p_exhJC37V3Bd3N4-1moTHq54IIObHXTyCPpkqaHVTHFi0j6-D7MaCgYKAU0SARASFQHGX2MiM-9Yj_jMndZ_XaIi0tarOg0170&key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                        
+                            <img src="https://media1.tenor.com/m/gI6C605hQsUAAAAC/normal.gif"
                                  width="120px" height="150px" alt="" loading="lazy">
                         </div>
                         <div class="Gif_true" style="display: none;">
-                            <img src="https://tenor.googleapis.com/v2/media?id=3782786082564410225&format=optimizedgif&client_key=tenor_web&appversion=browser-r20240715-1&access_token=ya29.a0AXooCgt8-bfCWmhyJk9iOneL-Z2a4R4w4DEONiUmTw8dCYqTwDAvqQpMTdi9AK2aSfVwFHoFTTkRVPdK9dv-kufnkcaIW7J4Tvw8mC_t4MzkPk3p_exhJC37V3Bd3N4-1moTHq54IIObHXTyCPpkqaHVTHFi0j6-D7MaCgYKAU0SARASFQHGX2MiM-9Yj_jMndZ_XaIi0tarOg0170&key=AIzaSyC-P6_qz3FzCoXGLk6tgitZo4jEJ5mLzD8"
+                            <img src="https://media1.tenor.com/m/NH8n5miLC3EAAAAC/true.gif"
                                  width="120px" height="150px" alt="" loading="lazy">
                         </div>
                         <h2 id="question">Câu hỏi</h2>
